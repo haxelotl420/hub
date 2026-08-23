@@ -1,0 +1,16 @@
+{
+  "$schema": "../../packages/game-sdk/game-manifest.schema.json",
+  "id": "wordle-coop",
+  "name": "Wordle cooperativo",
+  "version": "1.0.0",
+  "apiVersion": "1.0",
+  "publisher": { "id": "official", "name": "Browser Games Hub" },
+  "description": "Da 1 a 4 giocatori: la stessa parola tentata aggiorna tutti i tabelloni contemporaneamente.",
+  "media": { "icon": "assets/icon.svg", "banner": "assets/banner.svg" },
+  "players": { "min": 1, "max": 4 },
+  "modes": [{ "id": "coop", "name": "Cooperativa" }],
+  "realtime": { "required": true, "transport": "sse-mvp" },
+  "entrypoints": { "client": "client/index.js", "server": "server/index.js", "shared": "shared/rules.js" },
+  "compatibility": { "platform": ">=0.1.0 <2.0.0" },
+  "permissions": ["lobby", "presence"]
+}

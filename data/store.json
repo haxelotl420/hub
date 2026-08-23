@@ -1,0 +1,5425 @@
+{
+  "users": [
+    {
+      "id": "usr_688b589d3afe",
+      "username": "haxed420",
+      "email": "d.haxed@outlook.it",
+      "passwordHash": "488facf46cde837d9d6862ea36863aab:7266d36690fecc9f48cb63ff2303f17b50a1ae2879218eb1ff4d0c671703f3eaced7d6c2eba301135ec98045c33984b8452118d657a67f9853219d3f5e7d0142",
+      "displayName": "Haxed",
+      "bio": "",
+      "status": "offline",
+      "createdAt": "2026-08-23T15:05:25.748Z"
+    },
+    {
+      "id": "usr_d892735cbffd",
+      "username": "haxelotl420",
+      "email": "haxelotl420@gmail.com",
+      "passwordHash": "1a549ca8fd4031a4efe62ed04befc5cb:a27a313333cdccd05cec8d220c01e666728e22e06f49990db9402ea742513f080288ccb7265b0e93426896965080c7885737b1a643ed07f5802d10833ce09eaf",
+      "displayName": "Haxelotl",
+      "bio": "",
+      "status": "online",
+      "createdAt": "2026-08-23T15:06:10.001Z"
+    }
+  ],
+  "friendRequests": [
+    {
+      "id": "fr_e6c4ce10760c",
+      "senderId": "usr_688b589d3afe",
+      "receiverId": "usr_d892735cbffd",
+      "status": "accepted",
+      "createdAt": "2026-08-23T15:06:19.087Z",
+      "respondedAt": "2026-08-23T15:06:31.915Z"
+    }
+  ],
+  "friendships": [
+    {
+      "userA": "usr_688b589d3afe",
+      "userB": "usr_d892735cbffd",
+      "createdAt": "2026-08-23T15:06:31.915Z"
+    }
+  ],
+  "blocks": [],
+  "notifications": [
+    {
+      "id": "ntf_c778ab08b6bf",
+      "userId": "usr_688b589d3afe",
+      "type": "friend_accepted",
+      "payload": {
+        "username": "haxelotl420"
+      },
+      "readAt": null,
+      "createdAt": "2026-08-23T15:06:31.915Z"
+    },
+    {
+      "id": "ntf_7878fa132cf8",
+      "userId": "usr_d892735cbffd",
+      "type": "friend_request",
+      "payload": {
+        "requestId": "fr_e6c4ce10760c",
+        "from": "haxed420"
+      },
+      "readAt": null,
+      "createdAt": "2026-08-23T15:06:19.087Z"
+    }
+  ],
+  "lobbies": [
+    {
+      "id": "lob_18d19ad383e9",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:06:35.668Z"
+    },
+    {
+      "id": "lob_eb6839fa40e5",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:06:45.028Z"
+    },
+    {
+      "id": "lob_d647d00be4a3",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:07:17.357Z"
+    },
+    {
+      "id": "lob_5561cc522513",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:15:38.686Z"
+    },
+    {
+      "id": "lob_721d3281e519",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:15:47.187Z"
+    },
+    {
+      "id": "lob_4e9c3867cef7",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:26:24.286Z"
+    },
+    {
+      "id": "lob_cb3aa9d28281",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:26:47.959Z"
+    },
+    {
+      "id": "lob_45bd583b5ab7",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:56:35.161Z"
+    },
+    {
+      "id": "lob_7ac7642a211c",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:57:51.384Z"
+    },
+    {
+      "id": "lob_cf82b2495344",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:58:05.392Z"
+    },
+    {
+      "id": "lob_beb6fc3ef35c",
+      "gameId": "tris",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T15:59:46.857Z"
+    },
+    {
+      "id": "lob_0cafff305a16",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T16:07:01.997Z"
+    },
+    {
+      "id": "lob_4a0364857314",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T16:07:06.352Z"
+    },
+    {
+      "id": "lob_ef3e25e68e99",
+      "gameId": "tris",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T16:07:33.232Z"
+    },
+    {
+      "id": "lob_5e5686034334",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T16:11:10.318Z"
+    },
+    {
+      "id": "lob_b0864e6bd602",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T16:24:12.781Z"
+    },
+    {
+      "id": "lob_10fbae76ccd7",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T16:38:15.823Z"
+    },
+    {
+      "id": "lob_6f043cb45ff9",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 25
+      },
+      "createdAt": "2026-08-23T16:40:24.816Z"
+    },
+    {
+      "id": "lob_122fb55ec0d8",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T16:42:16.946Z"
+    },
+    {
+      "id": "lob_218740049dcc",
+      "gameId": "tris",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T16:54:45.033Z"
+    },
+    {
+      "id": "lob_42aa0c4a6efc",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T17:12:42.883Z"
+    },
+    {
+      "id": "lob_c4fb4d1a0f4c",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "createdAt": "2026-08-23T17:13:01.780Z"
+    },
+    {
+      "id": "lob_a7edf8984666",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "createdAt": "2026-08-23T17:28:08.189Z"
+    },
+    {
+      "id": "lob_e5e1f51e0a5c",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "createdAt": "2026-08-23T17:28:39.980Z"
+    },
+    {
+      "id": "lob_f30cd2eed022",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "createdAt": "2026-08-23T17:47:27.950Z"
+    },
+    {
+      "id": "lob_bcb3c01dfd15",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "createdAt": "2026-08-23T18:39:33.087Z"
+    },
+    {
+      "id": "lob_11e7484277a8",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "createdAt": "2026-08-23T18:40:13.915Z"
+    },
+    {
+      "id": "lob_5d377bc7a915",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "createdAt": "2026-08-23T18:46:06.483Z"
+    },
+    {
+      "id": "lob_63db3be0050b",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 15,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "createdAt": "2026-08-23T19:10:46.142Z"
+    },
+    {
+      "id": "lob_1022800cefb3",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 25,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "createdAt": "2026-08-23T19:22:02.089Z"
+    },
+    {
+      "id": "lob_fcb71eab6b6a",
+      "gameId": "bingo",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_d892735cbffd",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {},
+      "createdAt": "2026-08-23T19:28:27.184Z"
+    },
+    {
+      "id": "lob_e5f6146dcc8b",
+      "gameId": "wordle-coop",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe"
+      ],
+      "maxPlayers": 4,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "wordCount": 4,
+        "matchMode": "first",
+        "durationSeconds": 120
+      },
+      "createdAt": "2026-08-23T19:30:15.162Z"
+    },
+    {
+      "id": "lob_0793722f56ff",
+      "gameId": "uno",
+      "gameVersion": "1.0.0",
+      "hostId": "usr_688b589d3afe",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "maxPlayers": 2,
+      "privacy": "public",
+      "status": "IN_GAME",
+      "settings": {
+        "mode": "classic"
+      },
+      "createdAt": "2026-08-23T19:33:09.733Z"
+    }
+  ],
+  "matches": [
+    {
+      "id": "mat_e9651aee621e",
+      "lobbyId": "lob_18d19ad383e9",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:06:47.422Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_b313e6096201",
+      "lobbyId": "lob_eb6839fa40e5",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:07:05.094Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_f5ce85ea684d",
+      "lobbyId": "lob_d647d00be4a3",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:07:35.373Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_802fc8f81973",
+      "lobbyId": "lob_721d3281e519",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "FINISHED",
+      "createdAt": "2026-08-23T15:15:57.518Z",
+      "state": {
+        "rows": 6,
+        "columns": 7,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            "yellow",
+            null,
+            "red",
+            null
+          ],
+          [
+            "yellow",
+            "yellow",
+            "yellow",
+            "red",
+            "red",
+            "red",
+            "red"
+          ]
+        ],
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "color": "red"
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "color": "yellow"
+          }
+        ],
+        "turn": null,
+        "winner": "usr_d892735cbffd",
+        "draw": false,
+        "lastMove": {
+          "row": 5,
+          "column": 6,
+          "playerId": "usr_d892735cbffd",
+          "color": "red"
+        }
+      },
+      "sequence": 9,
+      "result": {
+        "status": "WON",
+        "winnerId": "usr_d892735cbffd"
+      }
+    },
+    {
+      "id": "mat_5919c624c6e8",
+      "lobbyId": "lob_cb3aa9d28281",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:27:06.564Z",
+      "state": {
+        "rows": 6,
+        "columns": 7,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "red",
+            "yellow",
+            null,
+            null,
+            "red",
+            null
+          ]
+        ],
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "color": "red"
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "color": "yellow"
+          }
+        ],
+        "turn": "usr_688b589d3afe",
+        "winner": null,
+        "draw": false,
+        "lastMove": {
+          "row": 5,
+          "column": 5,
+          "playerId": "usr_d892735cbffd",
+          "color": "red"
+        }
+      },
+      "sequence": 3
+    },
+    {
+      "id": "mat_10bc9c98fe9f",
+      "lobbyId": "lob_45bd583b5ab7",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:56:47.822Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_a9942a424212",
+      "lobbyId": "lob_45bd583b5ab7",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:57:29.260Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_99e0770597a4",
+      "lobbyId": "lob_7ac7642a211c",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:57:56.479Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_1a56d51f6be0",
+      "lobbyId": "lob_cf82b2495344",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:58:10.162Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_6301333cf420",
+      "lobbyId": "lob_beb6fc3ef35c",
+      "gameId": "tris",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T15:59:50.853Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_b2c095077623",
+      "lobbyId": "lob_4a0364857314",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:07:11.356Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_4d3557dcdba8",
+      "lobbyId": "lob_ef3e25e68e99",
+      "gameId": "tris",
+      "gameVersion": "1.0.0",
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:07:40.691Z",
+      "state": null,
+      "sequence": 0
+    },
+    {
+      "id": "mat_264a3639fa14",
+      "lobbyId": "lob_5e5686034334",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:11:35.760Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "ships": [
+              {
+                "id": "ship_1787501630457_aff8df0c7264a",
+                "typeId": "destroyer",
+                "row": 5,
+                "col": 3,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787501639558_1ffcf51099f7f8",
+                "typeId": "frigate",
+                "row": 0,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              }
+            ],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 2
+    },
+    {
+      "id": "mat_74960aec358e",
+      "lobbyId": "lob_b0864e6bd602",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:24:22.939Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "PLAY",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [
+              {
+                "id": "ship_1787502271853_cf4e637bed0d7",
+                "typeId": "destroyer",
+                "row": 1,
+                "col": 4,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502373343_66ff73cd4b6748",
+                "typeId": "submarine",
+                "row": 2,
+                "col": 6,
+                "orientation": "V",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502377825_e3be94c6aec088",
+                "typeId": "cruiser",
+                "row": 8,
+                "col": 6,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502380398_83cd348b0a664",
+                "typeId": "battleship",
+                "row": 6,
+                "col": 3,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502381945_a415ba23feef4",
+                "typeId": "carrier",
+                "row": 10,
+                "col": 3,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 1
+              }
+            ],
+            "ready": true,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [],
+            "deckReady": false,
+            "ships": [
+              {
+                "id": "ship_1787502387434_ac275bb0c2a078",
+                "typeId": "destroyer",
+                "row": 1,
+                "col": 5,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502388962_06d9354e26927",
+                "typeId": "submarine",
+                "row": 0,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502390927_9fee545d5a0508",
+                "typeId": "cruiser",
+                "row": 0,
+                "col": 3,
+                "orientation": "H",
+                "hits": [
+                  "0:3"
+                ],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502393860_c50de75503b978",
+                "typeId": "battleship",
+                "row": 0,
+                "col": 7,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787502395987_a681ccd56e2538",
+                "typeId": "carrier",
+                "row": 1,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              }
+            ],
+            "ready": true,
+            "shots": [],
+            "receivedShots": [
+              {
+                "row": 0,
+                "col": 3
+              }
+            ],
+            "powers": {}
+          }
+        ],
+        "turn": "usr_d892735cbffd",
+        "winner": null,
+        "lastAction": {
+          "playerId": "usr_688b589d3afe",
+          "results": [
+            {
+              "row": 0,
+              "col": 3,
+              "result": "hit"
+            }
+          ]
+        }
+      },
+      "sequence": 13
+    },
+    {
+      "id": "mat_77d69b77e8c8",
+      "lobbyId": "lob_10fbae76ccd7",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:38:23.870Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [],
+            "deckReady": false,
+            "ships": [
+              {
+                "id": "ship_1787503112785_8824f866978dd",
+                "typeId": "destroyer",
+                "row": 1,
+                "col": 1,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503115349_90f5e67d007a98",
+                "typeId": "destroyer",
+                "row": 1,
+                "col": 4,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503121199_557b863a09f478",
+                "typeId": "destroyer",
+                "row": 1,
+                "col": 7,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503126003_75bc70adc2e078",
+                "typeId": "destroyer",
+                "row": 4,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503127045_8f74bfc589c9b8",
+                "typeId": "submarine",
+                "row": 7,
+                "col": 6,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503128033_c072642e745848",
+                "typeId": "submarine",
+                "row": 8,
+                "col": 1,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503129214_55c7097ed4cf68",
+                "typeId": "cruiser",
+                "row": 7,
+                "col": 4,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              },
+              {
+                "id": "ship_1787503130572_fabe2a98778ef8",
+                "typeId": "battleship",
+                "row": 4,
+                "col": 5,
+                "orientation": "H",
+                "hits": [],
+                "powerCharge": 0
+              }
+            ],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 8
+    },
+    {
+      "id": "mat_5792d399b6b0",
+      "lobbyId": "lob_6f043cb45ff9",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 25
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:40:27.773Z",
+      "state": {
+        "mode": "plus",
+        "size": 25,
+        "deckBudget": 113,
+        "obstacles": [
+          {
+            "row": 9,
+            "col": 24,
+            "type": "rock"
+          },
+          {
+            "row": 22,
+            "col": 22,
+            "type": "island"
+          },
+          {
+            "row": 4,
+            "col": 16,
+            "type": "rock"
+          },
+          {
+            "row": 13,
+            "col": 13,
+            "type": "rock"
+          },
+          {
+            "row": 18,
+            "col": 23,
+            "type": "rock"
+          },
+          {
+            "row": 2,
+            "col": 13,
+            "type": "rock"
+          },
+          {
+            "row": 24,
+            "col": 21,
+            "type": "island"
+          },
+          {
+            "row": 21,
+            "col": 13,
+            "type": "rock"
+          },
+          {
+            "row": 0,
+            "col": 6,
+            "type": "island"
+          },
+          {
+            "row": 2,
+            "col": 17,
+            "type": "rock"
+          },
+          {
+            "row": 19,
+            "col": 15,
+            "type": "rock"
+          },
+          {
+            "row": 17,
+            "col": 8,
+            "type": "island"
+          },
+          {
+            "row": 10,
+            "col": 17,
+            "type": "island"
+          },
+          {
+            "row": 7,
+            "col": 9,
+            "type": "rock"
+          },
+          {
+            "row": 8,
+            "col": 13,
+            "type": "rock"
+          },
+          {
+            "row": 12,
+            "col": 1,
+            "type": "rock"
+          },
+          {
+            "row": 6,
+            "col": 23,
+            "type": "rock"
+          },
+          {
+            "row": 8,
+            "col": 11,
+            "type": "island"
+          },
+          {
+            "row": 10,
+            "col": 12,
+            "type": "rock"
+          },
+          {
+            "row": 18,
+            "col": 10,
+            "type": "rock"
+          },
+          {
+            "row": 9,
+            "col": 12,
+            "type": "rock"
+          },
+          {
+            "row": 10,
+            "col": 16,
+            "type": "rock"
+          },
+          {
+            "row": 6,
+            "col": 10,
+            "type": "island"
+          },
+          {
+            "row": 11,
+            "col": 11,
+            "type": "island"
+          },
+          {
+            "row": 1,
+            "col": 17,
+            "type": "rock"
+          }
+        ],
+        "phase": "DECK_BUILD",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [
+              {
+                "id": "deck_1787503278184_379c1f0af39608",
+                "typeId": "scout"
+              },
+              {
+                "id": "deck_1787503308417_b44674fd841dd8",
+                "typeId": "corvette"
+              }
+            ],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 4
+    },
+    {
+      "id": "mat_9dd19fdae307",
+      "lobbyId": "lob_122fb55ec0d8",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:42:27.538Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_065365ee87a3",
+      "lobbyId": "lob_218740049dcc",
+      "gameId": "tris",
+      "gameVersion": "1.0.0",
+      "settings": {},
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "FINISHED",
+      "createdAt": "2026-08-23T16:54:48.495Z",
+      "state": {
+        "board": [
+          "X",
+          "X",
+          "X",
+          null,
+          "O",
+          "X",
+          "O",
+          "O",
+          null
+        ],
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "mark": "X"
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "mark": "O"
+          }
+        ],
+        "turn": null,
+        "winner": "usr_d892735cbffd",
+        "draw": false,
+        "lastMove": {
+          "index": 2,
+          "playerId": "usr_d892735cbffd",
+          "mark": "X"
+        }
+      },
+      "sequence": 7,
+      "result": {
+        "status": "WON",
+        "winnerId": "usr_d892735cbffd"
+      }
+    },
+    {
+      "id": "mat_62f4b3ed2fbf",
+      "lobbyId": "lob_0cafff305a16",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:57:00.441Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_3fa5775216a7",
+      "lobbyId": "lob_5561cc522513",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "settings": {},
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:57:21.346Z",
+      "state": {
+        "rows": 6,
+        "columns": 7,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "color": "red"
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "color": "yellow"
+          }
+        ],
+        "turn": "usr_d892735cbffd",
+        "winner": null,
+        "draw": false,
+        "lastMove": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_0388eb3bd294",
+      "lobbyId": "lob_4e9c3867cef7",
+      "gameId": "forza-4",
+      "gameVersion": "1.0.0",
+      "settings": {},
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T16:57:23.505Z",
+      "state": {
+        "rows": 6,
+        "columns": 7,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "color": "red"
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "color": "yellow"
+          }
+        ],
+        "turn": "usr_d892735cbffd",
+        "winner": null,
+        "draw": false,
+        "lastMove": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_7582d8c1f4fa",
+      "lobbyId": "lob_42aa0c4a6efc",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T17:12:47.218Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_a07b0473ae2b",
+      "lobbyId": "lob_c4fb4d1a0f4c",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 11
+      },
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T17:13:05.086Z",
+      "state": {
+        "mode": "classic",
+        "size": 11,
+        "deckBudget": 22,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "receivedShots": [],
+            "powers": {}
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_31895d7e7a74",
+      "lobbyId": "lob_a7edf8984666",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T17:28:13.464Z",
+      "state": {
+        "mode": "classic",
+        "fleetSet": "daituunnome",
+        "size": 10,
+        "deckBudget": 30,
+        "minDeckShips": 5,
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier",
+                "row": 0,
+                "col": 1,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship",
+                "row": 1,
+                "col": 5,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser",
+                "row": 3,
+                "col": 3,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              }
+            ],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 3
+    },
+    {
+      "id": "mat_d666f7ced27c",
+      "lobbyId": "lob_e5e1f51e0a5c",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T17:28:52.969Z",
+      "state": {
+        "mode": "classic",
+        "fleetSet": "daituunnome",
+        "size": 10,
+        "deckBudget": 30,
+        "minDeckShips": 5,
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_c8dabfbc075e",
+      "lobbyId": "lob_f30cd2eed022",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T17:47:33.400Z",
+      "state": {
+        "mode": "plus",
+        "fleetSet": "daituunnome",
+        "size": 10,
+        "deckBudget": 30,
+        "minDeckShips": 5,
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true,
+        "obstacles": [
+          {
+            "row": 3,
+            "col": 7,
+            "type": "island"
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "type": "island"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "type": "island"
+          },
+          {
+            "row": 6,
+            "col": 3,
+            "type": "island"
+          }
+        ],
+        "phase": "PLAY",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [],
+            "deck": [
+              {
+                "id": "deck_1787507260870_e52ec38d76beb8",
+                "typeId": "scout"
+              },
+              {
+                "id": "deck_1787507268772_aeff9084d659a",
+                "typeId": "corvette"
+              },
+              {
+                "id": "deck_1787507285885_106d832ec5d31",
+                "typeId": "destroyer"
+              },
+              {
+                "id": "deck_1787507293733_ecec4126cc2e48",
+                "typeId": "fortress"
+              },
+              {
+                "id": "deck_1787507300651_fb8689bdcffba8",
+                "typeId": "submarine"
+              },
+              {
+                "id": "deck_1787507313065_e0eb785d664db8",
+                "typeId": "battleship"
+              }
+            ],
+            "deckReady": true,
+            "ships": [
+              {
+                "id": "deck_1787507260870_e52ec38d76beb8",
+                "typeId": "scout",
+                "row": 0,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507293733_ecec4126cc2e48"
+                ]
+              },
+              {
+                "id": "deck_1787507285885_106d832ec5d31",
+                "typeId": "destroyer",
+                "row": 1,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507293733_ecec4126cc2e48"
+                ]
+              },
+              {
+                "id": "deck_1787507293733_ecec4126cc2e48",
+                "typeId": "fortress",
+                "row": 0,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "deck_1787507313065_e0eb785d664db8",
+                "typeId": "battleship",
+                "row": 2,
+                "col": 4,
+                "orientation": "H",
+                "hits": [
+                  "3:4",
+                  "3:5",
+                  "3:6"
+                ],
+                "cooldown": [
+                  "deck_1787507293733_ecec4126cc2e48"
+                ]
+              },
+              {
+                "id": "deck_1787507268772_aeff9084d659a",
+                "typeId": "corvette",
+                "row": 0,
+                "col": 6,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507293733_ecec4126cc2e48"
+                ]
+              },
+              {
+                "id": "deck_1787507300651_fb8689bdcffba8",
+                "typeId": "submarine",
+                "row": 2,
+                "col": 7,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507293733_ecec4126cc2e48"
+                ]
+              }
+            ],
+            "ready": true,
+            "shots": [
+              {
+                "row": 2,
+                "col": 2,
+                "result": "miss"
+              }
+            ],
+            "reveals": [
+              {
+                "row": 1,
+                "col": 1,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 1,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "patrol",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 1,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "patrol",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 1,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 3,
+                "col": 1,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 3,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 3,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              }
+            ],
+            "receivedShots": [
+              {
+                "row": 3,
+                "col": 4
+              },
+              {
+                "row": 3,
+                "col": 5
+              },
+              {
+                "row": 3,
+                "col": 6
+              }
+            ]
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [],
+            "deck": [
+              {
+                "id": "deck_1787507320730_63e9d2ff09a448",
+                "typeId": "scout"
+              },
+              {
+                "id": "deck_1787507322547_89f347f1ed698",
+                "typeId": "patrol"
+              },
+              {
+                "id": "deck_1787507326457_5e1453703a1ac8",
+                "typeId": "gunboat"
+              },
+              {
+                "id": "deck_1787507331356_acb78fc6cd9268",
+                "typeId": "destroyer"
+              },
+              {
+                "id": "deck_1787507333898_a02d70a30bd73",
+                "typeId": "submarine"
+              },
+              {
+                "id": "deck_1787507336024_fa17ebf3bc064",
+                "typeId": "carrier"
+              },
+              {
+                "id": "deck_1787507339751_0dc06859ab047",
+                "typeId": "battleship"
+              }
+            ],
+            "deckReady": true,
+            "ships": [
+              {
+                "id": "deck_1787507320730_63e9d2ff09a448",
+                "typeId": "scout",
+                "row": 0,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507322547_89f347f1ed698"
+                ]
+              },
+              {
+                "id": "deck_1787507322547_89f347f1ed698",
+                "typeId": "patrol",
+                "row": 1,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "deck_1787507326457_5e1453703a1ac8",
+                "typeId": "gunboat",
+                "row": 4,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507322547_89f347f1ed698"
+                ]
+              },
+              {
+                "id": "deck_1787507336024_fa17ebf3bc064",
+                "typeId": "carrier",
+                "row": 8,
+                "col": 5,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507322547_89f347f1ed698"
+                ]
+              },
+              {
+                "id": "deck_1787507339751_0dc06859ab047",
+                "typeId": "battleship",
+                "row": 7,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507322547_89f347f1ed698"
+                ]
+              },
+              {
+                "id": "deck_1787507333898_a02d70a30bd73",
+                "typeId": "submarine",
+                "row": 6,
+                "col": 6,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507322547_89f347f1ed698"
+                ]
+              },
+              {
+                "id": "deck_1787507331356_acb78fc6cd9268",
+                "typeId": "destroyer",
+                "row": 6,
+                "col": 4,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": [
+                  "deck_1787507322547_89f347f1ed698"
+                ]
+              }
+            ],
+            "ready": true,
+            "shots": [
+              {
+                "row": 3,
+                "col": 4,
+                "result": "hit"
+              },
+              {
+                "row": 3,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 3,
+                "col": 6,
+                "result": "hit"
+              }
+            ],
+            "reveals": [],
+            "receivedShots": [
+              {
+                "row": 2,
+                "col": 2
+              }
+            ]
+          }
+        ],
+        "turn": "usr_688b589d3afe",
+        "winner": null,
+        "lastAction": {
+          "playerId": "usr_d892735cbffd",
+          "results": [
+            {
+              "row": 3,
+              "col": 4,
+              "result": "hit"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "result": "hit"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "result": "hit"
+            }
+          ],
+          "reveals": []
+        }
+      },
+      "sequence": 32
+    },
+    {
+      "id": "mat_bd40d900be56",
+      "lobbyId": "lob_bcb3c01dfd15",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T18:39:51.774Z",
+      "state": {
+        "mode": "classic",
+        "fleetSet": "daituunnome",
+        "size": 10,
+        "deckBudget": 30,
+        "minDeckShips": 5,
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier",
+                "row": 2,
+                "col": 3,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship",
+                "row": 5,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser",
+                "row": 7,
+                "col": 3,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              }
+            ],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 3
+    },
+    {
+      "id": "mat_26702ad2ebf1",
+      "lobbyId": "lob_11e7484277a8",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T18:40:34.291Z",
+      "state": {
+        "mode": "plus",
+        "fleetSet": "daituunnome",
+        "size": 10,
+        "deckBudget": 30,
+        "minDeckShips": 5,
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true,
+        "obstacles": [
+          {
+            "row": 7,
+            "col": 3,
+            "type": "island"
+          },
+          {
+            "row": 8,
+            "col": 7,
+            "type": "rock"
+          },
+          {
+            "row": 3,
+            "col": 8,
+            "type": "rock"
+          },
+          {
+            "row": 2,
+            "col": 9,
+            "type": "rock"
+          }
+        ],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [],
+            "deck": [
+              {
+                "id": "deck_1787510459219_34ad60200075c8",
+                "typeId": "scout"
+              },
+              {
+                "id": "deck_1787510461353_8d83229dec6268",
+                "typeId": "corvette"
+              },
+              {
+                "id": "deck_1787510462402_51a9da0e47ebc",
+                "typeId": "cruiser"
+              },
+              {
+                "id": "deck_1787510463204_9faf0f4707ac08",
+                "typeId": "battleship"
+              },
+              {
+                "id": "deck_1787510463835_d425fef4429b5",
+                "typeId": "frigate"
+              },
+              {
+                "id": "deck_1787510464455_f434bd818dbfc8",
+                "typeId": "fortress"
+              }
+            ],
+            "deckReady": true,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [],
+            "deck": [
+              {
+                "id": "deck_1787510475617_2177da0d5ed4b8",
+                "typeId": "scout"
+              },
+              {
+                "id": "deck_1787510476520_ee7e137d8e0c7",
+                "typeId": "patrol"
+              },
+              {
+                "id": "deck_1787510477285_66937842edcb58",
+                "typeId": "frigate"
+              },
+              {
+                "id": "deck_1787510478034_c91483a201c548",
+                "typeId": "submarine"
+              },
+              {
+                "id": "deck_1787510478668_d3a74d620ce63",
+                "typeId": "cruiser"
+              },
+              {
+                "id": "deck_1787510479268_b35a5ff28f4e6",
+                "typeId": "fortress"
+              }
+            ],
+            "deckReady": true,
+            "ships": [
+              {
+                "id": "deck_1787510479268_b35a5ff28f4e6",
+                "typeId": "fortress",
+                "row": 4,
+                "col": 0,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "deck_1787510477285_66937842edcb58",
+                "typeId": "frigate",
+                "row": 1,
+                "col": 2,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "deck_1787510478034_c91483a201c548",
+                "typeId": "submarine",
+                "row": 0,
+                "col": 5,
+                "orientation": "H",
+                "hits": [],
+                "cooldown": []
+              }
+            ],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 17
+    },
+    {
+      "id": "mat_11e1d6739a8f",
+      "lobbyId": "lob_5d377bc7a915",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic",
+        "boardSize": 10,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false
+      },
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T18:46:14.675Z",
+      "state": {
+        "mode": "classic",
+        "fleetSet": "daituunnome",
+        "size": 10,
+        "deckBudget": 30,
+        "minDeckShips": 5,
+        "abilitiesEnabled": false,
+        "specialShotsEnabled": false,
+        "obstacles": [],
+        "phase": "SETUP",
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [
+              {
+                "id": "fleet_daituunnome_1",
+                "typeId": "classic-carrier"
+              },
+              {
+                "id": "fleet_daituunnome_2",
+                "typeId": "classic-battleship"
+              },
+              {
+                "id": "fleet_daituunnome_3",
+                "typeId": "classic-cruiser"
+              },
+              {
+                "id": "fleet_daituunnome_4",
+                "typeId": "classic-submarine"
+              },
+              {
+                "id": "fleet_daituunnome_5",
+                "typeId": "classic-destroyer"
+              }
+            ],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 0
+    },
+    {
+      "id": "mat_de3f91ea366d",
+      "lobbyId": "lob_63db3be0050b",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 15,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T19:10:51.349Z",
+      "state": {
+        "mode": "plus",
+        "fleetSet": "daituunnome",
+        "size": 15,
+        "deckBudget": 68,
+        "minDeckShips": 5,
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true,
+        "obstacles": [
+          {
+            "row": 2,
+            "col": 3,
+            "type": "rock"
+          },
+          {
+            "row": 12,
+            "col": 12,
+            "type": "island"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "type": "island"
+          },
+          {
+            "row": 11,
+            "col": 13,
+            "type": "island"
+          },
+          {
+            "row": 0,
+            "col": 12,
+            "type": "island"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "type": "island"
+          },
+          {
+            "row": 1,
+            "col": 11,
+            "type": "rock"
+          },
+          {
+            "row": 12,
+            "col": 4,
+            "type": "island"
+          },
+          {
+            "row": 0,
+            "col": 10,
+            "type": "island"
+          }
+        ],
+        "phase": "DECK_BUILD",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [],
+            "deck": [],
+            "deckReady": false,
+            "ships": [],
+            "ready": false,
+            "shots": [],
+            "reveals": [],
+            "receivedShots": []
+          }
+        ],
+        "turn": null,
+        "winner": null,
+        "lastAction": null
+      },
+      "sequence": 6
+    },
+    {
+      "id": "mat_2ea68beaaf27",
+      "lobbyId": "lob_1022800cefb3",
+      "gameId": "battaglia-navale",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "plus",
+        "boardSize": 25,
+        "fleetSet": "daituunnome",
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T19:22:31.901Z",
+      "state": {
+        "mode": "plus",
+        "fleetSet": "daituunnome",
+        "size": 25,
+        "deckBudget": 45,
+        "minDeckShips": 5,
+        "abilitiesEnabled": true,
+        "specialShotsEnabled": true,
+        "obstacles": [
+          {
+            "row": 8,
+            "col": 19,
+            "type": "rock"
+          },
+          {
+            "row": 5,
+            "col": 5,
+            "type": "rock"
+          },
+          {
+            "row": 6,
+            "col": 4,
+            "type": "island"
+          },
+          {
+            "row": 24,
+            "col": 17,
+            "type": "island"
+          },
+          {
+            "row": 15,
+            "col": 9,
+            "type": "rock"
+          },
+          {
+            "row": 4,
+            "col": 18,
+            "type": "island"
+          },
+          {
+            "row": 15,
+            "col": 22,
+            "type": "island"
+          },
+          {
+            "row": 10,
+            "col": 3,
+            "type": "island"
+          },
+          {
+            "row": 22,
+            "col": 12,
+            "type": "island"
+          },
+          {
+            "row": 1,
+            "col": 17,
+            "type": "island"
+          },
+          {
+            "row": 23,
+            "col": 11,
+            "type": "island"
+          },
+          {
+            "row": 13,
+            "col": 7,
+            "type": "rock"
+          },
+          {
+            "row": 16,
+            "col": 9,
+            "type": "island"
+          },
+          {
+            "row": 24,
+            "col": 21,
+            "type": "rock"
+          },
+          {
+            "row": 15,
+            "col": 23,
+            "type": "rock"
+          },
+          {
+            "row": 16,
+            "col": 6,
+            "type": "rock"
+          },
+          {
+            "row": 6,
+            "col": 17,
+            "type": "island"
+          },
+          {
+            "row": 8,
+            "col": 14,
+            "type": "island"
+          },
+          {
+            "row": 16,
+            "col": 22,
+            "type": "rock"
+          },
+          {
+            "row": 7,
+            "col": 17,
+            "type": "island"
+          },
+          {
+            "row": 9,
+            "col": 2,
+            "type": "rock"
+          },
+          {
+            "row": 6,
+            "col": 18,
+            "type": "rock"
+          },
+          {
+            "row": 8,
+            "col": 20,
+            "type": "rock"
+          },
+          {
+            "row": 19,
+            "col": 16,
+            "type": "rock"
+          },
+          {
+            "row": 20,
+            "col": 0,
+            "type": "island"
+          }
+        ],
+        "phase": "PLAY",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "fleet": [],
+            "deck": [
+              {
+                "id": "deck_1787512961344_199c693bfff4a8",
+                "typeId": "plus-10-1"
+              },
+              {
+                "id": "deck_1787512962243_1a6660ceb034c",
+                "typeId": "plus-3-3"
+              },
+              {
+                "id": "deck_1787512962873_a6a6211b59236",
+                "typeId": "plus-3-5"
+              },
+              {
+                "id": "deck_1787512964650_c4c6a06d0a2c4",
+                "typeId": "plus-4-4"
+              },
+              {
+                "id": "deck_1787512969579_2f78721a5004e",
+                "typeId": "plus-5-4"
+              },
+              {
+                "id": "deck_1787512970101_68c9e603f085b8",
+                "typeId": "plus-5-5"
+              },
+              {
+                "id": "deck_1787512970597_b1462eefe52f58",
+                "typeId": "plus-6-1"
+              },
+              {
+                "id": "deck_1787512975051_c4132648a89138",
+                "typeId": "plus-6-33"
+              }
+            ],
+            "deckReady": true,
+            "ships": [
+              {
+                "id": "deck_1787512962873_a6a6211b59236",
+                "typeId": "plus-3-5",
+                "row": 1,
+                "col": 2,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "1:3",
+                  "1:2"
+                ],
+                "cooldown": [
+                  "deck_1787512969579_2f78721a5004e",
+                  "deck_1787512962243_1a6660ceb034c",
+                  "deck_1787512961344_199c693bfff4a8"
+                ]
+              },
+              {
+                "id": "deck_1787512964650_c4c6a06d0a2c4",
+                "typeId": "plus-4-4",
+                "row": 0,
+                "col": 3,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "0:5"
+                ],
+                "cooldown": [
+                  "deck_1787512969579_2f78721a5004e",
+                  "deck_1787512962243_1a6660ceb034c",
+                  "deck_1787512961344_199c693bfff4a8"
+                ]
+              },
+              {
+                "id": "deck_1787512962243_1a6660ceb034c",
+                "typeId": "plus-3-3",
+                "row": 0,
+                "col": 0,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [],
+                "cooldown": [
+                  "deck_1787512961344_199c693bfff4a8",
+                  "deck_1787512969579_2f78721a5004e"
+                ]
+              },
+              {
+                "id": "deck_1787512970597_b1462eefe52f58",
+                "typeId": "plus-6-1",
+                "row": 3,
+                "col": 0,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "3:2",
+                  "3:0"
+                ],
+                "cooldown": [
+                  "deck_1787512969579_2f78721a5004e",
+                  "deck_1787512962243_1a6660ceb034c",
+                  "deck_1787512961344_199c693bfff4a8"
+                ]
+              },
+              {
+                "id": "deck_1787512969579_2f78721a5004e",
+                "typeId": "plus-5-4",
+                "row": 2,
+                "col": 3,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "2:5"
+                ],
+                "cooldown": [
+                  "deck_1787512961344_199c693bfff4a8"
+                ]
+              },
+              {
+                "id": "deck_1787512961344_199c693bfff4a8",
+                "typeId": "plus-10-1",
+                "row": 4,
+                "col": 0,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "deck_1787512970101_68c9e603f085b8",
+                "typeId": "plus-5-5",
+                "row": 5,
+                "col": 3,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [],
+                "cooldown": [
+                  "deck_1787512969579_2f78721a5004e",
+                  "deck_1787512962243_1a6660ceb034c",
+                  "deck_1787512961344_199c693bfff4a8"
+                ]
+              },
+              {
+                "id": "deck_1787512975051_c4132648a89138",
+                "typeId": "plus-6-33",
+                "row": 7,
+                "col": 1,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [],
+                "cooldown": [
+                  "deck_1787512969579_2f78721a5004e",
+                  "deck_1787512962243_1a6660ceb034c",
+                  "deck_1787512961344_199c693bfff4a8"
+                ]
+              }
+            ],
+            "ready": true,
+            "shots": [
+              {
+                "row": 4,
+                "col": 0,
+                "result": "miss"
+              },
+              {
+                "row": 3,
+                "col": 0,
+                "result": "miss"
+              },
+              {
+                "row": 5,
+                "col": 0,
+                "result": "hit"
+              },
+              {
+                "row": 2,
+                "col": 0,
+                "result": "hit"
+              },
+              {
+                "row": 6,
+                "col": 0,
+                "result": "miss"
+              },
+              {
+                "row": 1,
+                "col": 0,
+                "result": "hit"
+              },
+              {
+                "row": 7,
+                "col": 0,
+                "result": "miss"
+              },
+              {
+                "row": 0,
+                "col": 0,
+                "result": "hit"
+              },
+              {
+                "row": 8,
+                "col": 0,
+                "result": "miss"
+              },
+              {
+                "row": 1,
+                "col": 3,
+                "result": "hit"
+              },
+              {
+                "row": 2,
+                "col": 6,
+                "result": "hit"
+              },
+              {
+                "row": 4,
+                "col": 5,
+                "result": "miss"
+              },
+              {
+                "row": 3,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 5,
+                "col": 5,
+                "result": "miss"
+              },
+              {
+                "row": 2,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 6,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 1,
+                "col": 5,
+                "result": "miss"
+              },
+              {
+                "row": 7,
+                "col": 5,
+                "result": "miss"
+              },
+              {
+                "row": 0,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 8,
+                "col": 5,
+                "result": "miss"
+              },
+              {
+                "row": 4,
+                "col": 2,
+                "result": "hit"
+              }
+            ],
+            "reveals": [
+              {
+                "row": 0,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-2",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 0,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "cruiser",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 0,
+                "col": 4,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-1",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 1,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-2",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 1,
+                "col": 4,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-2",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "cruiser",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 4,
+                "result": "reveal",
+                "content": {
+                  "type": "cruiser",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 3,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-2",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 5,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 4,
+                "col": 1,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-3",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 4,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 3,
+                "col": 1,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-3",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 3,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 5,
+                "col": 1,
+                "result": "reveal",
+                "content": {
+                  "type": "submarine",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 5,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              }
+            ],
+            "receivedShots": [
+              {
+                "row": 1,
+                "col": 1
+              },
+              {
+                "row": 1,
+                "col": 3
+              },
+              {
+                "row": 1,
+                "col": 6
+              },
+              {
+                "row": 0,
+                "col": 5
+              },
+              {
+                "row": 0,
+                "col": 7
+              },
+              {
+                "row": 2,
+                "col": 5
+              },
+              {
+                "row": 2,
+                "col": 7
+              },
+              {
+                "row": 2,
+                "col": 1
+              },
+              {
+                "row": 1,
+                "col": 0
+              },
+              {
+                "row": 3,
+                "col": 2
+              },
+              {
+                "row": 1,
+                "col": 2
+              },
+              {
+                "row": 3,
+                "col": 0
+              },
+              {
+                "row": 21,
+                "col": 11
+              }
+            ]
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "fleet": [],
+            "deck": [
+              {
+                "id": "deck_1787512986840_6d498e3afa42e",
+                "typeId": "corvette"
+              },
+              {
+                "id": "deck_1787512987838_3a986d26c4a6e",
+                "typeId": "scout"
+              },
+              {
+                "id": "deck_1787512989605_1c11d06685abf",
+                "typeId": "plus-4-2"
+              },
+              {
+                "id": "deck_1787512994740_b46c444e0b45e",
+                "typeId": "plus-5-28"
+              },
+              {
+                "id": "deck_1787512995204_e41e2fcf24d6b",
+                "typeId": "cruiser"
+              },
+              {
+                "id": "deck_1787512995704_3a3d59ece724b",
+                "typeId": "battleship"
+              },
+              {
+                "id": "deck_1787512996171_0305359e2ccd",
+                "typeId": "plus-4-1"
+              },
+              {
+                "id": "deck_1787512996586_49207cff3371e8",
+                "typeId": "plus-4-3"
+              },
+              {
+                "id": "deck_1787513001253_9326ac99e98458",
+                "typeId": "submarine"
+              }
+            ],
+            "deckReady": true,
+            "ships": [
+              {
+                "id": "deck_1787512986840_6d498e3afa42e",
+                "typeId": "corvette",
+                "row": 0,
+                "col": 0,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "2:0",
+                  "1:0",
+                  "0:0"
+                ],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e",
+                  "deck_1787513001253_9326ac99e98458",
+                  "deck_1787512995704_3a3d59ece724b"
+                ]
+              },
+              {
+                "id": "deck_1787512987838_3a986d26c4a6e",
+                "typeId": "scout",
+                "row": 0,
+                "col": 1,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [],
+                "cooldown": []
+              },
+              {
+                "id": "deck_1787512989605_1c11d06685abf",
+                "typeId": "plus-4-2",
+                "row": 0,
+                "col": 2,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e",
+                  "deck_1787513001253_9326ac99e98458",
+                  "deck_1787512995704_3a3d59ece724b"
+                ]
+              },
+              {
+                "id": "deck_1787512995204_e41e2fcf24d6b",
+                "typeId": "cruiser",
+                "row": 0,
+                "col": 3,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "1:3",
+                  "2:5"
+                ],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e",
+                  "deck_1787513001253_9326ac99e98458",
+                  "deck_1787512995704_3a3d59ece724b"
+                ]
+              },
+              {
+                "id": "deck_1787512996171_0305359e2ccd",
+                "typeId": "plus-4-1",
+                "row": 0,
+                "col": 4,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "0:5"
+                ],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e",
+                  "deck_1787513001253_9326ac99e98458",
+                  "deck_1787512995704_3a3d59ece724b"
+                ]
+              },
+              {
+                "id": "deck_1787512996586_49207cff3371e8",
+                "typeId": "plus-4-3",
+                "row": 2,
+                "col": 1,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "4:2"
+                ],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e",
+                  "deck_1787513001253_9326ac99e98458",
+                  "deck_1787512995704_3a3d59ece724b"
+                ]
+              },
+              {
+                "id": "deck_1787512995704_3a3d59ece724b",
+                "typeId": "battleship",
+                "row": 1,
+                "col": 6,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "2:6"
+                ],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e"
+                ]
+              },
+              {
+                "id": "deck_1787512994740_b46c444e0b45e",
+                "typeId": "plus-5-28",
+                "row": 3,
+                "col": 5,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "3:5",
+                  "6:5"
+                ],
+                "cooldown": [
+                  "deck_1787512987838_3a986d26c4a6e",
+                  "deck_1787513001253_9326ac99e98458",
+                  "deck_1787512995704_3a3d59ece724b"
+                ]
+              },
+              {
+                "id": "deck_1787513001253_9326ac99e98458",
+                "typeId": "submarine",
+                "row": 5,
+                "col": 0,
+                "orientation": "H",
+                "mirror": false,
+                "hits": [
+                  "5:0"
+                ],
+                "cooldown": [
+                  "deck_1787512995704_3a3d59ece724b",
+                  "deck_1787512987838_3a986d26c4a6e"
+                ]
+              }
+            ],
+            "ready": true,
+            "shots": [
+              {
+                "row": 1,
+                "col": 1,
+                "result": "miss"
+              },
+              {
+                "row": 1,
+                "col": 3,
+                "result": "hit"
+              },
+              {
+                "row": 1,
+                "col": 6,
+                "result": "miss"
+              },
+              {
+                "row": 0,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 0,
+                "col": 7,
+                "result": "miss"
+              },
+              {
+                "row": 2,
+                "col": 5,
+                "result": "hit"
+              },
+              {
+                "row": 2,
+                "col": 7,
+                "result": "miss"
+              },
+              {
+                "row": 2,
+                "col": 1,
+                "result": "miss"
+              },
+              {
+                "row": 1,
+                "col": 0,
+                "result": "miss"
+              },
+              {
+                "row": 3,
+                "col": 2,
+                "result": "hit"
+              },
+              {
+                "row": 1,
+                "col": 2,
+                "result": "hit"
+              },
+              {
+                "row": 3,
+                "col": 0,
+                "result": "hit"
+              },
+              {
+                "row": 21,
+                "col": 11,
+                "result": "miss"
+              }
+            ],
+            "reveals": [
+              {
+                "row": 0,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-3-3",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 0,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-4",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 0,
+                "col": 4,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-4-4",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 1,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-3-5",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 1,
+                "col": 4,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-3-5",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 3,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-5-4",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 2,
+                "col": 4,
+                "result": "reveal",
+                "content": {
+                  "type": "plus-5-4",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 20,
+                "col": 10,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 20,
+                "col": 11,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 20,
+                "col": 12,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 21,
+                "col": 10,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 21,
+                "col": 12,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 22,
+                "col": 10,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 22,
+                "col": 11,
+                "result": "reveal",
+                "content": {
+                  "type": "revealed",
+                  "revealed": true
+                }
+              },
+              {
+                "row": 22,
+                "col": 12,
+                "result": "reveal",
+                "content": {
+                  "type": "obstacle",
+                  "obstacle": "island",
+                  "revealed": true
+                }
+              }
+            ],
+            "receivedShots": [
+              {
+                "row": 4,
+                "col": 0
+              },
+              {
+                "row": 3,
+                "col": 0
+              },
+              {
+                "row": 5,
+                "col": 0
+              },
+              {
+                "row": 2,
+                "col": 0
+              },
+              {
+                "row": 6,
+                "col": 0
+              },
+              {
+                "row": 1,
+                "col": 0
+              },
+              {
+                "row": 7,
+                "col": 0
+              },
+              {
+                "row": 0,
+                "col": 0
+              },
+              {
+                "row": 8,
+                "col": 0
+              },
+              {
+                "row": 1,
+                "col": 3
+              },
+              {
+                "row": 2,
+                "col": 6
+              },
+              {
+                "row": 4,
+                "col": 5
+              },
+              {
+                "row": 3,
+                "col": 5
+              },
+              {
+                "row": 2,
+                "col": 5
+              },
+              {
+                "row": 6,
+                "col": 5
+              },
+              {
+                "row": 1,
+                "col": 5
+              },
+              {
+                "row": 7,
+                "col": 5
+              },
+              {
+                "row": 0,
+                "col": 5
+              },
+              {
+                "row": 8,
+                "col": 5
+              },
+              {
+                "row": 4,
+                "col": 2
+              }
+            ]
+          }
+        ],
+        "turn": "usr_688b589d3afe",
+        "winner": null,
+        "lastAction": {
+          "playerId": "usr_d892735cbffd",
+          "targetId": "usr_688b589d3afe",
+          "results": [
+            {
+              "row": 21,
+              "col": 11,
+              "result": "miss"
+            }
+          ],
+          "reveals": [
+            {
+              "row": 20,
+              "col": 10,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 20,
+              "col": 11,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 20,
+              "col": 12,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 21,
+              "col": 10,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 21,
+              "col": 12,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 22,
+              "col": 10,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 22,
+              "col": 11,
+              "result": "reveal",
+              "content": {
+                "type": "revealed",
+                "revealed": true
+              }
+            },
+            {
+              "row": 22,
+              "col": 12,
+              "result": "reveal",
+              "content": {
+                "type": "obstacle",
+                "obstacle": "island",
+                "revealed": true
+              }
+            }
+          ]
+        }
+      },
+      "sequence": 50
+    },
+    {
+      "id": "mat_f95aa71728c3",
+      "lobbyId": "lob_fcb71eab6b6a",
+      "gameId": "bingo",
+      "gameVersion": "1.0.0",
+      "settings": {},
+      "playerIds": [
+        "usr_d892735cbffd",
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T19:28:30.819Z",
+      "state": {
+        "size": 5,
+        "players": [
+          {
+            "id": "usr_d892735cbffd",
+            "board": [
+              12,
+              23,
+              24,
+              17,
+              15,
+              21,
+              9,
+              4,
+              10,
+              13,
+              22,
+              25,
+              14,
+              11,
+              5,
+              6,
+              20,
+              18,
+              19,
+              2,
+              8,
+              1,
+              3,
+              16,
+              7
+            ],
+            "marked": [
+              12,
+              10,
+              23,
+              4,
+              24,
+              13,
+              17,
+              25,
+              15,
+              9,
+              14,
+              22,
+              20,
+              3,
+              18
+            ],
+            "completedLines": [
+              0,
+              7
+            ],
+            "bingo": "BI"
+          },
+          {
+            "id": "usr_688b589d3afe",
+            "board": [
+              6,
+              16,
+              21,
+              3,
+              20,
+              7,
+              5,
+              2,
+              24,
+              15,
+              14,
+              8,
+              1,
+              22,
+              11,
+              18,
+              17,
+              23,
+              9,
+              19,
+              4,
+              12,
+              10,
+              13,
+              25
+            ],
+            "marked": [
+              12,
+              10,
+              23,
+              4,
+              24,
+              13,
+              17,
+              25,
+              15,
+              9,
+              14,
+              22,
+              20,
+              3,
+              18
+            ],
+            "completedLines": [
+              4,
+              8
+            ],
+            "bingo": "BI"
+          }
+        ],
+        "calledNumbers": [
+          12,
+          10,
+          23,
+          4,
+          24,
+          13,
+          17,
+          25,
+          15,
+          9,
+          14,
+          22,
+          20,
+          3,
+          18
+        ],
+        "turn": "usr_688b589d3afe",
+        "winner": null,
+        "lastCall": {
+          "number": 18,
+          "playerId": "usr_d892735cbffd",
+          "newlyCompleted": [
+            {
+              "playerId": "usr_d892735cbffd",
+              "added": 1,
+              "progress": "BI"
+            },
+            {
+              "playerId": "usr_688b589d3afe",
+              "added": 0,
+              "progress": "BI"
+            }
+          ]
+        }
+      },
+      "sequence": 15
+    },
+    {
+      "id": "mat_fed781719d3d",
+      "lobbyId": "lob_e5f6146dcc8b",
+      "gameId": "wordle-coop",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "wordCount": 4,
+        "matchMode": "first",
+        "durationSeconds": 120
+      },
+      "playerIds": [
+        "usr_688b589d3afe"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T19:30:16.353Z",
+      "state": {
+        "variant": "coop",
+        "matchMode": "first",
+        "wordCount": 4,
+        "durationSeconds": 120,
+        "startedAt": 1787513416354,
+        "targets": [
+          "PONTE",
+          "CUORE",
+          "MAREO",
+          "LUNGA"
+        ],
+        "boards": [
+          {
+            "target": "PONTE",
+            "guesses": [
+              {
+                "guess": "TERRA",
+                "evaluation": [
+                  "present",
+                  "present",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MALVA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MARTA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MARZA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MAREA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MAREI",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "WDADD",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              }
+            ],
+            "solved": false
+          },
+          {
+            "target": "CUORE",
+            "guesses": [
+              {
+                "guess": "TERRA",
+                "evaluation": [
+                  "absent",
+                  "present",
+                  "absent",
+                  "correct",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MALVA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MARTA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MARZA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MAREA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "present",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MAREI",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "present",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "WDADD",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              }
+            ],
+            "solved": false
+          },
+          {
+            "target": "MAREO",
+            "guesses": [
+              {
+                "guess": "TERRA",
+                "evaluation": [
+                  "absent",
+                  "present",
+                  "correct",
+                  "absent",
+                  "present"
+                ]
+              },
+              {
+                "guess": "MALVA",
+                "evaluation": [
+                  "correct",
+                  "correct",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MARTA",
+                "evaluation": [
+                  "correct",
+                  "correct",
+                  "correct",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MARZA",
+                "evaluation": [
+                  "correct",
+                  "correct",
+                  "correct",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MAREA",
+                "evaluation": [
+                  "correct",
+                  "correct",
+                  "correct",
+                  "correct",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "MAREI",
+                "evaluation": [
+                  "correct",
+                  "correct",
+                  "correct",
+                  "correct",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "WDADD",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "correct",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              }
+            ],
+            "solved": false
+          },
+          {
+            "target": "LUNGA",
+            "guesses": [
+              {
+                "guess": "TERRA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct"
+                ]
+              },
+              {
+                "guess": "MALVA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent",
+                  "correct"
+                ]
+              },
+              {
+                "guess": "MARTA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct"
+                ]
+              },
+              {
+                "guess": "MARZA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct"
+                ]
+              },
+              {
+                "guess": "MAREA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct"
+                ]
+              },
+              {
+                "guess": "MAREI",
+                "evaluation": [
+                  "absent",
+                  "present",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "WDADD",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "present",
+                  "absent",
+                  "absent"
+                ]
+              },
+              {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct"
+                ]
+              }
+            ],
+            "solved": false
+          }
+        ],
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "boards": null,
+            "score": 0,
+            "finishedAt": null
+          }
+        ],
+        "winner": null,
+        "draw": false,
+        "lastGuess": {
+          "playerId": "usr_688b589d3afe",
+          "guess": "DAWDA",
+          "affected": [
+            {
+              "index": 0,
+              "entry": {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              }
+            },
+            {
+              "index": 1,
+              "entry": {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              }
+            },
+            {
+              "index": 2,
+              "entry": {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "correct",
+                  "absent",
+                  "absent",
+                  "absent"
+                ]
+              }
+            },
+            {
+              "index": 3,
+              "entry": {
+                "guess": "DAWDA",
+                "evaluation": [
+                  "absent",
+                  "absent",
+                  "absent",
+                  "absent",
+                  "correct"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "sequence": 8
+    },
+    {
+      "id": "mat_0d87f011d1e9",
+      "lobbyId": "lob_0793722f56ff",
+      "gameId": "uno",
+      "gameVersion": "1.0.0",
+      "settings": {
+        "mode": "classic"
+      },
+      "playerIds": [
+        "usr_688b589d3afe",
+        "usr_d892735cbffd"
+      ],
+      "status": "IN_GAME",
+      "createdAt": "2026-08-23T19:33:14.477Z",
+      "state": {
+        "mode": "classic",
+        "modeName": "Classica",
+        "drawPile": [
+          {
+            "id": "card_58",
+            "color": "green",
+            "value": "4"
+          },
+          {
+            "id": "card_20",
+            "color": "red",
+            "value": "skip"
+          },
+          {
+            "id": "card_33",
+            "color": "yellow",
+            "value": "4"
+          },
+          {
+            "id": "card_36",
+            "color": "yellow",
+            "value": "5"
+          },
+          {
+            "id": "card_17",
+            "color": "red",
+            "value": "8"
+          },
+          {
+            "id": "card_44",
+            "color": "yellow",
+            "value": "9"
+          },
+          {
+            "id": "card_34",
+            "color": "yellow",
+            "value": "4"
+          },
+          {
+            "id": "card_91",
+            "color": "blue",
+            "value": "8"
+          },
+          {
+            "id": "card_45",
+            "color": "yellow",
+            "value": "skip"
+          },
+          {
+            "id": "card_41",
+            "color": "yellow",
+            "value": "8"
+          },
+          {
+            "id": "card_40",
+            "color": "yellow",
+            "value": "7"
+          },
+          {
+            "id": "card_63",
+            "color": "green",
+            "value": "6"
+          },
+          {
+            "id": "card_46",
+            "color": "yellow",
+            "value": "skip"
+          },
+          {
+            "id": "card_47",
+            "color": "yellow",
+            "value": "reverse"
+          },
+          {
+            "id": "card_65",
+            "color": "green",
+            "value": "7"
+          },
+          {
+            "id": "card_90",
+            "color": "blue",
+            "value": "7"
+          },
+          {
+            "id": "card_82",
+            "color": "blue",
+            "value": "3"
+          },
+          {
+            "id": "card_101",
+            "color": "wild",
+            "value": "wild"
+          },
+          {
+            "id": "card_69",
+            "color": "green",
+            "value": "9"
+          },
+          {
+            "id": "card_59",
+            "color": "green",
+            "value": "4"
+          },
+          {
+            "id": "card_5",
+            "color": "red",
+            "value": "2"
+          },
+          {
+            "id": "card_10",
+            "color": "red",
+            "value": "5"
+          },
+          {
+            "id": "card_37",
+            "color": "yellow",
+            "value": "6"
+          },
+          {
+            "id": "card_39",
+            "color": "yellow",
+            "value": "7"
+          },
+          {
+            "id": "card_71",
+            "color": "green",
+            "value": "skip"
+          },
+          {
+            "id": "card_68",
+            "color": "green",
+            "value": "9"
+          },
+          {
+            "id": "card_28",
+            "color": "yellow",
+            "value": "1"
+          },
+          {
+            "id": "card_92",
+            "color": "blue",
+            "value": "8"
+          },
+          {
+            "id": "card_106",
+            "color": "wild",
+            "value": "wild4"
+          },
+          {
+            "id": "card_77",
+            "color": "blue",
+            "value": "1"
+          },
+          {
+            "id": "card_78",
+            "color": "blue",
+            "value": "1"
+          },
+          {
+            "id": "card_56",
+            "color": "green",
+            "value": "3"
+          },
+          {
+            "id": "card_13",
+            "color": "red",
+            "value": "6"
+          },
+          {
+            "id": "card_107",
+            "color": "wild",
+            "value": "wild4"
+          },
+          {
+            "id": "card_61",
+            "color": "green",
+            "value": "5"
+          },
+          {
+            "id": "card_84",
+            "color": "blue",
+            "value": "4"
+          },
+          {
+            "id": "card_76",
+            "color": "blue",
+            "value": "0"
+          },
+          {
+            "id": "card_64",
+            "color": "green",
+            "value": "7"
+          },
+          {
+            "id": "card_54",
+            "color": "green",
+            "value": "2"
+          },
+          {
+            "id": "card_60",
+            "color": "green",
+            "value": "5"
+          },
+          {
+            "id": "card_93",
+            "color": "blue",
+            "value": "9"
+          },
+          {
+            "id": "card_53",
+            "color": "green",
+            "value": "1"
+          },
+          {
+            "id": "card_86",
+            "color": "blue",
+            "value": "5"
+          },
+          {
+            "id": "card_38",
+            "color": "yellow",
+            "value": "6"
+          },
+          {
+            "id": "card_31",
+            "color": "yellow",
+            "value": "3"
+          },
+          {
+            "id": "card_94",
+            "color": "blue",
+            "value": "9"
+          },
+          {
+            "id": "card_55",
+            "color": "green",
+            "value": "2"
+          },
+          {
+            "id": "card_30",
+            "color": "yellow",
+            "value": "2"
+          },
+          {
+            "id": "card_81",
+            "color": "blue",
+            "value": "3"
+          },
+          {
+            "id": "card_26",
+            "color": "yellow",
+            "value": "0"
+          },
+          {
+            "id": "card_70",
+            "color": "green",
+            "value": "skip"
+          },
+          {
+            "id": "card_50",
+            "color": "yellow",
+            "value": "draw2"
+          },
+          {
+            "id": "card_104",
+            "color": "wild",
+            "value": "wild"
+          },
+          {
+            "id": "card_43",
+            "color": "yellow",
+            "value": "9"
+          },
+          {
+            "id": "card_57",
+            "color": "green",
+            "value": "3"
+          },
+          {
+            "id": "card_74",
+            "color": "green",
+            "value": "draw2"
+          },
+          {
+            "id": "card_83",
+            "color": "blue",
+            "value": "4"
+          },
+          {
+            "id": "card_103",
+            "color": "wild",
+            "value": "wild"
+          },
+          {
+            "id": "card_97",
+            "color": "blue",
+            "value": "reverse"
+          },
+          {
+            "id": "card_14",
+            "color": "red",
+            "value": "7"
+          },
+          {
+            "id": "card_105",
+            "color": "wild",
+            "value": "wild4"
+          },
+          {
+            "id": "card_73",
+            "color": "green",
+            "value": "reverse"
+          },
+          {
+            "id": "card_2",
+            "color": "red",
+            "value": "1"
+          },
+          {
+            "id": "card_32",
+            "color": "yellow",
+            "value": "3"
+          },
+          {
+            "id": "card_52",
+            "color": "green",
+            "value": "1"
+          },
+          {
+            "id": "card_25",
+            "color": "red",
+            "value": "draw2"
+          },
+          {
+            "id": "card_49",
+            "color": "yellow",
+            "value": "draw2"
+          },
+          {
+            "id": "card_19",
+            "color": "red",
+            "value": "9"
+          },
+          {
+            "id": "card_85",
+            "color": "blue",
+            "value": "5"
+          },
+          {
+            "id": "card_6",
+            "color": "red",
+            "value": "3"
+          },
+          {
+            "id": "card_29",
+            "color": "yellow",
+            "value": "2"
+          },
+          {
+            "id": "card_66",
+            "color": "green",
+            "value": "8"
+          },
+          {
+            "id": "card_23",
+            "color": "red",
+            "value": "reverse"
+          },
+          {
+            "id": "card_98",
+            "color": "blue",
+            "value": "reverse"
+          },
+          {
+            "id": "card_67",
+            "color": "green",
+            "value": "8"
+          },
+          {
+            "id": "card_3",
+            "color": "red",
+            "value": "1"
+          },
+          {
+            "id": "card_87",
+            "color": "blue",
+            "value": "6"
+          },
+          {
+            "id": "card_96",
+            "color": "blue",
+            "value": "skip"
+          },
+          {
+            "id": "card_80",
+            "color": "blue",
+            "value": "2"
+          },
+          {
+            "id": "card_79",
+            "color": "blue",
+            "value": "2"
+          },
+          {
+            "id": "card_102",
+            "color": "wild",
+            "value": "wild"
+          },
+          {
+            "id": "card_89",
+            "color": "blue",
+            "value": "7"
+          },
+          {
+            "id": "card_100",
+            "color": "blue",
+            "value": "draw2"
+          },
+          {
+            "id": "card_99",
+            "color": "blue",
+            "value": "draw2"
+          },
+          {
+            "id": "card_51",
+            "color": "green",
+            "value": "0"
+          },
+          {
+            "id": "card_62",
+            "color": "green",
+            "value": "6"
+          },
+          {
+            "id": "card_12",
+            "color": "red",
+            "value": "6"
+          },
+          {
+            "id": "card_27",
+            "color": "yellow",
+            "value": "1"
+          },
+          {
+            "id": "card_95",
+            "color": "blue",
+            "value": "skip"
+          },
+          {
+            "id": "card_1",
+            "color": "red",
+            "value": "0"
+          },
+          {
+            "id": "card_16",
+            "color": "red",
+            "value": "8"
+          }
+        ],
+        "discardPile": [
+          {
+            "id": "card_8",
+            "color": "red",
+            "value": "4"
+          },
+          {
+            "id": "card_21",
+            "color": "red",
+            "value": "skip"
+          },
+          {
+            "id": "card_22",
+            "color": "red",
+            "value": "reverse"
+          },
+          {
+            "id": "card_9",
+            "color": "red",
+            "value": "4"
+          },
+          {
+            "id": "card_24",
+            "color": "red",
+            "value": "draw2"
+          }
+        ],
+        "currentColor": "red",
+        "players": [
+          {
+            "id": "usr_688b589d3afe",
+            "hand": [
+              {
+                "id": "card_42",
+                "color": "yellow",
+                "value": "8"
+              },
+              {
+                "id": "card_7",
+                "color": "red",
+                "value": "3"
+              },
+              {
+                "id": "card_88",
+                "color": "blue",
+                "value": "6"
+              },
+              {
+                "id": "card_18",
+                "color": "red",
+                "value": "9"
+              },
+              {
+                "id": "card_108",
+                "color": "wild",
+                "value": "wild4"
+              },
+              {
+                "id": "card_75",
+                "color": "green",
+                "value": "draw2"
+              }
+            ],
+            "calledUno": false
+          },
+          {
+            "id": "usr_d892735cbffd",
+            "hand": [
+              {
+                "id": "card_72",
+                "color": "green",
+                "value": "reverse"
+              },
+              {
+                "id": "card_4",
+                "color": "red",
+                "value": "2"
+              },
+              {
+                "id": "card_15",
+                "color": "red",
+                "value": "7"
+              },
+              {
+                "id": "card_48",
+                "color": "yellow",
+                "value": "reverse"
+              },
+              {
+                "id": "card_11",
+                "color": "red",
+                "value": "5"
+              },
+              {
+                "id": "card_35",
+                "color": "yellow",
+                "value": "5"
+              }
+            ],
+            "calledUno": false
+          }
+        ],
+        "turn": "usr_d892735cbffd",
+        "direction": -1,
+        "pendingDraw": 0,
+        "winner": null,
+        "lastAction": {
+          "type": "draw_card",
+          "playerId": "usr_688b589d3afe",
+          "amount": 2
+        }
+      },
+      "sequence": 5
+    }
+  ]
+}

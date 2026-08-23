@@ -1,0 +1,16 @@
+{
+  "name": "browser-games-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MVP modulare per un hub di browser games multiplayer",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node apps/server/server.js",
+    "dev": "node --watch apps/server/server.js",
+    "test": "node --test games/*/tests/*.test.js",
+    "discover": "node scripts/discover-games.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

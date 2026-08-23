@@ -1,0 +1,16 @@
+{
+  "$schema": "../../packages/game-sdk/game-manifest.schema.json",
+  "id": "uno",
+  "name": "Uno",
+  "version": "1.0.0",
+  "apiVersion": "1.0",
+  "publisher": { "id": "official", "name": "Browser Games Hub" },
+  "description": "Il classico Uno da 2 a 16 giocatori, con modalità Stack e Caos.",
+  "media": { "icon": "assets/icon.svg", "banner": "assets/banner.svg" },
+  "players": { "min": 2, "max": 16 },
+  "modes": [{ "id": "classic", "name": "Classica" }, { "id": "stack", "name": "Stack selvaggio" }, { "id": "chaos", "name": "Caos" }],
+  "realtime": { "required": true, "transport": "sse-mvp" },
+  "entrypoints": { "client": "client/index.js", "server": "server/index.js", "shared": "shared/rules.js" },
+  "compatibility": { "platform": ">=0.1.0 <2.0.0" },
+  "permissions": ["lobby", "presence"]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../packages/game-sdk/game-manifest.schema.json",
+  "id": "tris",
+  "name": "Tris · Tic Tac Toe",
+  "version": "1.0.0",
+  "apiVersion": "1.0",
+  "publisher": { "id": "official", "name": "Browser Games Hub" },
+  "description": "Il classico Tic Tac Toe a turni con X e O.",
+  "media": { "icon": "assets/icon.svg", "banner": "assets/banner.svg" },
+  "players": { "min": 2, "max": 2 },
+  "modes": [{ "id": "classic", "name": "Classica" }],
+  "realtime": { "required": true, "transport": "sse-mvp" },
+  "entrypoints": { "client": "client/index.js", "server": "server/index.js", "shared": "shared/rules.js" },
+  "compatibility": { "platform": ">=0.1.0 <2.0.0" },
+  "permissions": ["lobby", "presence"]
+}

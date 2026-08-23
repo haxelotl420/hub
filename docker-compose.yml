@@ -1,0 +1,26 @@
+services:
+  app:
+    image: node:20-alpine
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+    command: node apps/server/server.js
+    profiles: ["demo"]
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: browser_games
+      POSTGRES_USER: browser_games
+      POSTGRES_PASSWORD: change-me-in-development
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    profiles: ["production-data"]
+volumes:
+  postgres_data:

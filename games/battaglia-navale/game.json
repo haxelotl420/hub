@@ -1,0 +1,19 @@
+{
+  "$schema": "../../packages/game-sdk/game-manifest.schema.json",
+  "id": "battaglia-navale",
+  "name": "Battaglia Navale",
+  "version": "1.0.0",
+  "apiVersion": "1.0",
+  "publisher": { "id": "official", "name": "Browser Games Hub" },
+  "description": "Battaglia Navale classica o Plus con deck personalizzabile, mappe estese e poteri.",
+  "media": { "icon": "assets/icon.svg", "banner": "assets/banner.svg" },
+  "players": { "min": 2, "max": 2 },
+  "modes": [
+    { "id": "classic", "name": "Classica" },
+    { "id": "plus", "name": "Plus" }
+  ],
+  "realtime": { "required": true, "transport": "sse-mvp" },
+  "entrypoints": { "client": "client/index.js", "server": "server/index.js", "shared": "shared/rules.js" },
+  "compatibility": { "platform": ">=0.1.0 <2.0.0" },
+  "permissions": ["lobby", "presence"]
+}
