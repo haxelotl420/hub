@@ -25,8 +25,8 @@ source = source.replace(
   "function clearSession(req, res) {\n  const sid = parseCookies(req).session;\n  if (sid) {\n    store.sessions = store.sessions.filter(item => item.sid !== sid);\n    saveStore();\n  }\n  res.setHeader('Set-Cookie', 'session=; HttpOnly; SameSite=Lax; Path=/; Max-Age=0');\n}"
 );
 source = source.replace(
-  "function publicUser(user) {\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, status: user.status, createdAt: user.createdAt };\n}",
-  "function publicUser(user) {\n  if (user && !user.avatarId) {\n    user.avatarId = `mascot-${String(Math.floor(Math.random() * 100) + 1).padStart(3, '0')}`;\n    saveStore();\n  }\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, avatarId: user.avatarId || null, status: user.status, createdAt: user.createdAt };\n}"
+  "function publicUser(user) {\n  if (user && !user.avatarId) {\n    user.avatarId = `mascot-${String(Math.floor(Math.random() * 100) + 1).padStart(3, '0')}`;\n    saveStore();\n  }\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, avatarId: user.avatarId || null, status: user.status, createdAt: user.createdAt };\n}",
+  "function publicUser(user) {\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, avatarId: user.avatarId || 'mascot-001', status: user.status, createdAt: user.createdAt };\n}"
 );
 source = source.replace(
   "function normalizeGameSettings(gameId, input = {}) {",
@@ -37,11 +37,11 @@ source = source.replace(
   "const user = requireUser(req, res); if (!user) return;\n\n  if (method === 'PATCH' && pathname === '/api/profile') {\n    const input = await body(req);\n    if (input.avatarId !== undefined) {\n      const avatarId = String(input.avatarId || '').trim();\n      if (!/^mascot-\\d{3}$/.test(avatarId)) return json(res, 422, { error: 'Avatar non valido.' });\n      user.avatarId = avatarId;\n    }\n    saveStore();\n    return json(res, 200, { user: publicUser(user) });\n  }"
 );
 source = source.replace(
-  "      const user = { id: id('usr'), username, email, passwordHash: hashPassword(password), displayName: input.displayName || username, bio: '', status: 'online', createdAt: new Date().toISOString() };",
+  "      const user = { id: id('usr'), username, email, passwordHash: hashPassword(password), displayName: input.displayName || username, bio: '', avatarId: `mascot-${String(Math.floor(Math.random() * 100) + 1).padStart(3, '0')}`, status: 'online', createdAt: new Date().toISOString() };",
   "      const user = { id: id('usr'), username, email, passwordHash: hashPassword(password), displayName: input.displayName || username, bio: '', avatarId: `mascot-${String(Math.floor(Math.random() * 100) + 1).padStart(3, '0')}`, status: 'online', createdAt: new Date().toISOString() };"
 );
 source = source.replace(
-  "  const lobbyMatch = pathname.match(/^\\/api\\/lobbies\\/([^/]+)(?:\\/(join|start))?$/);",
+  "  const deleteLobbyMatch = pathname.match(/^\\/api\\/lobbies\\/([^/]+)$/);\n  if (method === 'DELETE' && deleteLobbyMatch) { const lobby = store.lobbies.find(item => item.id === deleteLobbyMatch[1]); if (!lobby) return json(res, 404, { error: 'Lobby non trovata.' }); if (lobby.hostId !== user.id) return json(res, 403, { error: 'Solo il creatore può eliminare la lobby.' }); if (lobby.status !== 'WAITING') return json(res, 409, { error: 'Una partita già avviata non può essere eliminata.' }); store.lobbies = store.lobbies.filter(item => item.id !== lobby.id); saveStore(); publish(event(MESSAGE_TYPES.LOBBY_UPDATED, { ...lobbyView(lobby), status: 'DELETED' })); return json(res, 200, { ok: true }); }\n\n  const lobbyMatch = pathname.match(/^\\/api\\/lobbies\\/([^/]+)(?:\\/(join|start))?$/);",
   "  const deleteLobbyMatch = pathname.match(/^\\/api\\/lobbies\\/([^/]+)$/);\n  if (method === 'DELETE' && deleteLobbyMatch) { const lobby = store.lobbies.find(item => item.id === deleteLobbyMatch[1]); if (!lobby) return json(res, 404, { error: 'Lobby non trovata.' }); if (lobby.hostId !== user.id) return json(res, 403, { error: 'Solo il creatore può eliminare la lobby.' }); if (lobby.status !== 'WAITING') return json(res, 409, { error: 'Una partita già avviata non può essere eliminata.' }); store.lobbies = store.lobbies.filter(item => item.id !== lobby.id); saveStore(); publish(event(MESSAGE_TYPES.LOBBY_UPDATED, { ...lobbyView(lobby), status: 'DELETED' })); return json(res, 200, { ok: true }); }\n\n  const lobbyMatch = pathname.match(/^\\/api\\/lobbies\\/([^/]+)(?:\\/(join|start))?$/);"
 );
 const mod = new Module(target, module);
