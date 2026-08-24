@@ -1,87 +1,71 @@
 (() => {
-  const STYLE_ID = 'uno-table-fixes-style';
-  let match = null;
-  let me = null;
-
-  const api = async (path, options = {}) => {
-    const response = await fetch(path, { headers: { 'Content-Type': 'application/json', ...(options.headers || {}) }, ...options });
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || 'Operazione non riuscita.');
-    return data;
-  };
+  const STYLE_ID = 'uno-circular-table-style-v2';
+  const CARD_LABELS = { skip: '⊘', reverse: '↺', draw2: '+2', wild4: '+4', wild: '★' };
+  const label = card => CARD_LABELS[card?.value] || card?.value || '?';
   const esc = value => String(value ?? '').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
+  const playerName = id => { const p = state.match?.playerProfiles?.find(item => item.id === id); return p?.displayName || p?.username || id; };
+
+  function cardFan(cards, back = false) {
+    const safe = Array.isArray(cards) ? cards : [];
+    const count = safe.length;
+    return `<div class="gf-seat-hand" style="--card-count:${Math.max(1, count)}">${safe.map((card, i) => {
+      const centered = i - (count - 1) / 2;
+      const rot = count <= 1 ? 0 : centered * Math.min(8, 36 / Math.max(1, count - 1));
+      const x = count <= 1 ? 0 : centered * Math.min(34, 220 / Math.max(1, count - 1));
+      return `<button class="uno-card ${back ? 'gf-opponent-card-back' : esc(card.color)}" ${back ? 'tabindex="-1" aria-hidden="true"' : `data-uno-card="${esc(card.id)}" ${state.match.state.turn === state.user.id && !state.match.state.winner ? '' : 'disabled'}`} style="--fan-x:${x.toFixed(1)}px;--fan-rot:${rot.toFixed(1)}deg">${back ? '' : label(card)}</button>`;
+    }).join('')}</div>`;
+  }
 
   function injectStyle() {
     if (document.getElementById(STYLE_ID)) return;
     const style = document.createElement('style');
     style.id = STYLE_ID;
     style.textContent = `
-      .uno-table{position:relative;min-height:620px;overflow:visible!important}
-      .uno-table .gf-opponents{position:absolute!important;inset:0!important;display:block!important;margin:0!important;pointer-events:none;z-index:20}
-      .uno-table .gf-opponent{position:absolute!important;left:50%;top:50%;display:flex!important;flex-direction:column;align-items:center;gap:5px;min-width:0!important;transform:translate(-50%,-50%) rotate(var(--angle)) translateY(calc(-1 * var(--radius)));transform-origin:center center}
-      .gf-opponent-content{display:flex;flex-direction:column;align-items:center;gap:5px;transform:rotate(var(--counter-angle));white-space:nowrap}
-      .gf-opponent-name{font-weight:900;font-size:14px;text-shadow:0 2px 8px rgba(0,0,0,.7);max-width:150px;overflow:hidden;text-overflow:ellipsis}
-      .gf-opponent-count{font-size:11px;opacity:.82}
-      .gf-card-fan{position:relative;width:170px;height:84px}
-      .gf-card-back{position:absolute!important;left:50%;bottom:2px;width:52px;height:72px;border-radius:10px;background:repeating-linear-gradient(45deg,#272d3b 0,#272d3b 5px,#343b4d 5px,#343b4d 10px);border:2px solid #657087;box-shadow:0 7px 12px rgba(0,0,0,.35);transform:translateX(-50%) translateX(var(--fan-x)) rotate(var(--fan-rot));transform-origin:50% 100%;}
-      .gf-card-back:after{content:'UNO';position:absolute;inset:17px 7px;border-radius:50%;display:grid;place-items:center;background:#c92f3b;color:white;font-weight:1000;font-size:11px;transform:rotate(-18deg)}
-      @media(max-width:900px){.uno-table{min-height:540px}.gf-card-fan{width:145px}.gf-opponent-name{font-size:12px}.gf-card-back{width:45px;height:64px}.uno-table .gf-opponent{--radius:190px!important}}
+      .uno-table.gf-circular-table{position:relative;min-height:760px;overflow:visible!important;padding:28px!important}
+      .gf-uno-arena{position:relative;min-height:650px;height:650px;border-radius:24px;background:radial-gradient(circle at center,rgba(50,56,85,.18),rgba(9,11,20,.08) 55%,transparent 75%)}
+      .gf-uno-discard{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:30;text-align:center}
+      .gf-discard-title{margin-bottom:8px}
+      .gf-uno-seat{position:absolute;left:50%;top:50%;width:250px;min-height:160px;display:flex;align-items:center;justify-content:center;padding:12px 10px;border:1px solid rgba(115,125,155,.38);border-radius:18px;background:rgba(17,20,31,.94);box-shadow:0 16px 40px rgba(0,0,0,.28);transform:translate(-50%,-50%) rotate(var(--seat-angle)) translateY(calc(-1 * var(--seat-radius)));transform-origin:center center;z-index:20}
+      .gf-uno-seat-content{display:flex;flex-direction:column;align-items:center;gap:7px;transform:rotate(calc(-1 * var(--seat-angle)));width:100%}
+      .gf-uno-seat.me{border-color:rgba(111,129,255,.72);box-shadow:0 0 0 2px rgba(111,121,255,.12),0 16px 40px rgba(0,0,0,.3);z-index:25}
+      .gf-seat-name{font-weight:900;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+      .gf-seat-meta{font-size:11px;opacity:.75}
+      .gf-seat-hand{position:relative;height:94px;width:230px;display:flex;justify-content:center;align-items:flex-end}
+      .gf-seat-hand .uno-card{position:absolute!important;left:50%;bottom:2px;width:58px;height:82px;margin:0!important;transform:translateX(-50%) translateX(var(--fan-x)) rotate(var(--fan-rot));transform-origin:50% 100%;transition:transform .15s ease,filter .15s ease}
+      .gf-seat-hand .uno-card:hover:not(:disabled){z-index:100;transform:translateX(-50%) translateX(var(--fan-x)) translateY(-10px) rotate(var(--fan-rot))}
+      .gf-opponent-card-back{background:repeating-linear-gradient(45deg,#272d3b 0,#272d3b 5px,#343b4d 5px,#343b4d 10px)!important;border-color:#657087!important;color:transparent!important;box-shadow:0 8px 16px rgba(0,0,0,.34)!important;pointer-events:none}
+      .gf-opponent-card-back:after{content:'UNO';position:absolute;inset:19px 7px;border-radius:50%;display:grid;place-items:center;background:#c92f3b;color:#fff;font-weight:1000;font-size:11px;transform:rotate(-18deg)}
+      .gf-uno-discard .uno-card{pointer-events:none}
+      .gf-uno-actions{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:40;display:flex;gap:10px}
+      .gf-uno-actions .btn{min-width:105px}
+      .gf-uno-color{font-size:11px;opacity:.78}
+      @media(max-width:1100px){.uno-table.gf-circular-table{min-height:690px}.gf-uno-arena{height:590px;min-height:590px}.gf-uno-seat{width:210px;min-height:145px;--seat-radius:220px!important}.gf-seat-hand{width:200px}.gf-seat-hand .uno-card{width:50px;height:72px}}
+      @media(max-width:760px){.uno-table.gf-circular-table{padding:12px!important;min-height:780px}.gf-uno-arena{height:670px;min-height:670px}.gf-uno-seat{width:170px;min-height:125px;padding:8px}.gf-seat-hand{width:165px;height:78px}.gf-seat-hand .uno-card{width:42px;height:61px;font-size:12px}.gf-uno-seat{--seat-radius:235px!important}.gf-seat-name{max-width:150px;font-size:12px}.gf-uno-actions{bottom:8px}}
     `;
     document.head.appendChild(style);
   }
 
-  async function loadMatch() {
-    const id = sessionStorage.getItem('browser-games-active-match');
-    if (!id) { match = null; return; }
-    try { match = (await api(`/api/matches/${id}`)).match; } catch { match = null; }
+  function buildSeat(player, angle, radius, isMe) {
+    const hand = isMe ? (state.match.state.hand || []) : Array.from({ length: Math.max(0, Number(player.cardCount) || 0) }, () => ({}));
+    return `<div class="gf-uno-seat ${isMe ? 'me' : ''}" style="--seat-angle:${angle.toFixed(1)}deg;--seat-radius:${radius}px"><div class="gf-uno-seat-content"><div class="gf-seat-name">${esc(playerName(player.id))}${player.id === state.match.state.turn ? ' · turno' : ''}</div><div class="gf-seat-meta">${hand.length} carte${player.calledUno ? ' · UNO!' : ''}</div>${cardFan(hand, !isMe)}</div></div>`;
   }
 
-  async function loadMe() {
-    try { me = (await api('/api/me')).user?.id || null; } catch { me = null; }
-  }
+  window.renderUnoMatch = function renderUnoMatch() {
+    const match = state.match;
+    const gameState = match?.state;
+    if (!match || !gameState) return '<div class="empty">Nessuna partita selezionata.</div>';
+    const me = state.user.id;
+    const players = (gameState.players || []).filter(p => p && p.id);
+    const mePlayer = players.find(p => p.id === me);
+    const ordered = mePlayer ? [mePlayer, ...players.filter(p => p.id !== me)] : players;
+    const total = Math.max(1, ordered.length);
+    const radius = Math.min(300, Math.max(225, 210 + total * 10));
+    const seats = ordered.map((player, index) => buildSeat(player, 180 + (360 / total) * index, radius, player.id === me)).join('');
+    const status = gameState.winner ? (gameState.winner === me ? 'Hai vinto!' : 'Partita terminata') : gameState.turn === me ? 'È il tuo turno' : `È il turno di ${esc(playerName(gameState.turn))}`;
+    const top = gameState.topCard;
+    return `<section>${matchHeader('Uno', status, match.gameId)}<div class="match-layout"><div class="panel uno-table gf-circular-table"><div class="gf-uno-arena">${seats}<div class="gf-uno-discard"><p class="eyebrow gf-discard-title">carte giocate</p><button class="uno-card large ${top?.color || 'wild'}" disabled>${label(top)}</button><div class="gf-uno-color">Colore: ${esc(gameState.currentColor || '—')}${gameState.pendingDraw ? ` · Pesca +${gameState.pendingDraw}` : ''}</div></div><div class="gf-uno-actions"><button class="btn ghost" data-uno-draw ${gameState.turn === me && !gameState.winner ? '' : 'disabled'}>Pesca carta</button><button class="btn primary" data-uno-call ${gameState.hand.length <= 2 && gameState.turn === me ? '' : 'disabled'}>UNO!</button></div></div></div><div class="panel"><p class="eyebrow">giocatori · ${esc(gameState.modeName)}</p><div class="list">${players.map(player => `<div class="list-item"><span>${esc(playerName(player.id))}${player.id === gameState.turn ? ' · turno' : ''}</span><strong>${player.id === me ? gameState.hand.length : player.cardCount} carte${player.calledUno ? ' · UNO!' : ''}</strong></div>`).join('')}</div><p class="muted">Le carte degli avversari mostrano solo il retro. La tua mano resta interattiva.</p></div></div></section>`;
+  };
 
-  function playerName(id) {
-    const profile = match?.playerProfiles?.find(player => player.id === id);
-    return profile?.displayName || profile?.username || id;
-  }
-
-  function renderOpponentHands() {
-    if (!match || match.gameId !== 'uno' || match.status === 'FINISHED') return;
-    const table = document.querySelector('.uno-table');
-    if (!table) return;
-    let wrap = table.querySelector('.gf-opponents');
-    if (!wrap) { wrap = document.createElement('div'); wrap.className = 'gf-opponents'; table.appendChild(wrap); }
-
-    const actualOpponents = (match.state?.players || []).filter(player => player.id !== me);
-    if (!actualOpponents.length) { wrap.innerHTML = ''; return; }
-
-    const html = actualOpponents.map((player, index) => {
-      const count = Math.max(0, Number(player.cardCount) || 0);
-      const total = actualOpponents.length;
-      const angle = total === 1 ? 0 : (360 / total) * index;
-      const radius = Math.min(265, Math.max(190, 230 + total * 4));
-      const safeCount = Math.min(count, 20);
-      const spacing = safeCount <= 1 ? 0 : Math.min(25, 145 / (safeCount - 1));
-      const cards = Array.from({ length: safeCount }, (_, cardIndex) => {
-        const centered = cardIndex - (safeCount - 1) / 2;
-        const rot = safeCount <= 1 ? 0 : centered * Math.min(7, 34 / Math.max(1, safeCount - 1));
-        return `<span class="gf-card-back" style="--fan-x:${(centered * spacing).toFixed(1)}px;--fan-rot:${rot.toFixed(1)}deg"></span>`;
-      }).join('');
-      return `<div class="gf-opponent" style="--angle:${angle.toFixed(1)}deg;--counter-angle:${(-angle).toFixed(1)}deg;--radius:${radius}px"><div class="gf-opponent-content"><div class="gf-opponent-name">${esc(playerName(player.id))}</div><div class="gf-card-fan">${cards}</div><div class="gf-opponent-count">${count} carte</div></div></div>`;
-    }).join('');
-
-    if (wrap.dataset.gfLayout === html) return;
-    wrap.innerHTML = html;
-    wrap.dataset.gfLayout = html;
-  }
-
-  async function tick() {
-    injectStyle();
-    if (!me) await loadMe();
-    await loadMatch();
-    renderOpponentHands();
-  }
-
-  tick();
-  setInterval(tick, 700);
+  injectStyle();
+  if (state.match?.gameId === 'uno' && typeof render === 'function') render();
 })();
