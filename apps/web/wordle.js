@@ -11,36 +11,38 @@
     const s = document.createElement('style');
     s.id = 'wordle-enhanced-style';
     s.textContent = `
-      /* The board always uses a 5:1 row ratio, so every cell stays square,
-         including untouched/empty cells. Width is calculated by the grid. */
-      .wordle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(16px,2vw,28px);align-items:start}
-      .wordle-board{width:100%;min-width:0}
-      .wordle-board .wordle-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(4px,.7vw,7px);width:100%;aspect-ratio:5/1;margin:clamp(5px,.7vw,7px) 0}
-      .wordle-board .wordle-cell{width:100%;height:auto;min-width:0;min-height:0;aspect-ratio:1/1;box-sizing:border-box;display:grid;place-items:center;border-radius:8px;font-size:clamp(14px,2vw,20px);line-height:1}
+      /* Keep every Wordle compact. A board is never allowed to grow past 200px. */
+      .wordle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,200px));justify-content:center;gap:14px;align-items:start;width:100%;max-width:640px;margin:0 auto}
+      .wordle-board{width:100%;min-width:0;max-width:200px;margin:0 auto}
+      /* Do NOT give the row a fixed height: the square cells determine it. */
+      .wordle-board .wordle-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:auto;gap:5px;width:100%;height:auto!important;min-height:0!important;margin:5px 0}
+      /* Explicitly force empty and filled cells to the same square geometry. */
+      .wordle-board .wordle-cell{display:grid!important;place-items:center;width:100%!important;height:auto!important;min-width:0!important;min-height:0!important;aspect-ratio:1/1!important;box-sizing:border-box;border-radius:8px;font-size:clamp(13px,2vw,19px);line-height:1}
 
-      .wordle-enhanced-keyboard{display:grid;gap:8px;margin:24px auto 0;width:min(100%,760px)}
-      .wordle-enhanced-key-row{display:flex;justify-content:center;gap:5px}
-      .wordle-enhanced-key{width:clamp(34px,5vw,54px);height:64px;min-width:0;padding:0;border:0;border-radius:8px;overflow:hidden;background:#d5d7dc;color:#151820;font-weight:900;cursor:pointer;display:grid;grid-template-rows:22px 1fr;box-shadow:0 1px 0 #fff4 inset}
+      .wordle-enhanced-keyboard{display:grid;gap:7px;margin:18px auto 0;width:min(100%,620px)}
+      .wordle-enhanced-key-row{display:flex;justify-content:center;gap:4px}
+      .wordle-enhanced-key{width:clamp(31px,4.5vw,48px);height:58px;min-width:0;padding:0;border:0;border-radius:8px;overflow:hidden;background:#d5d7dc;color:#151820;font-weight:900;cursor:pointer;display:grid;grid-template-rows:21px 1fr;box-shadow:0 1px 0 #fff4 inset}
       .wordle-enhanced-key:hover:not(:disabled){transform:translateY(-1px)}
       .wordle-enhanced-key:disabled{cursor:default}
       .wordle-enhanced-key-letter{display:grid;place-items:center;font-size:14px;font-weight:950;line-height:1;background:#d5d7dc;color:#151820;z-index:2}
-      .wordle-enhanced-key-segments{display:grid;grid-template-columns:repeat(var(--segment-cols),minmax(0,1fr));grid-auto-rows:1fr;width:100%;height:100%;min-height:0}
-      .wordle-enhanced-segment{display:grid;place-items:center;min-width:0;min-height:0;background:#d5d7dc;border-right:1px solid #adb1b9;border-top:1px solid #adb1b9;font-size:0}
-      .wordle-enhanced-segment:nth-child(var(--segment-cols)n){border-right:0}
+      .wordle-enhanced-key-segments{display:grid;grid-template-columns:repeat(var(--segment-cols),minmax(0,1fr));grid-template-rows:repeat(var(--segment-rows),minmax(0,1fr));width:100%;height:100%;min-height:0}
+      .wordle-enhanced-segment{display:block;min-width:0;min-height:0;background:#d5d7dc;border-right:1px solid #adb1b9;border-top:1px solid #adb1b9;font-size:0}
       .wordle-enhanced-segment.correct{background:#4caf50;color:#fff}
       .wordle-enhanced-segment.present{background:#d7a72f;color:#fff}
       .wordle-enhanced-segment.absent{background:#30343d;color:#fff}
-      .wordle-enhanced-key.single-board{grid-template-rows:22px 1fr}
 
       .wordle-enhanced-controls{display:grid;gap:10px;padding:14px;border:1px solid var(--line);border-radius:12px;margin:10px 0 4px}
       .wordle-enhanced-controls .row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
       .wordle-enhanced-controls input[type=number]{width:90px}
       @media(max-width:720px){
-        .wordle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:14px}
-        .wordle-enhanced-key{width:clamp(27px,8vw,42px);height:56px;grid-template-rows:20px 1fr}
+        .wordle-grid{grid-template-columns:repeat(auto-fit,minmax(140px,180px));gap:10px;max-width:390px}
+        .wordle-board{max-width:180px}
+        .wordle-enhanced-key{width:clamp(27px,8vw,40px);height:54px;grid-template-rows:20px 1fr}
         .wordle-enhanced-key-letter{font-size:12px}
       }
       @media(max-width:430px){
+        .wordle-grid{grid-template-columns:minmax(0,180px);max-width:180px}
+        .wordle-board{max-width:180px}
         .wordle-enhanced-keyboard{gap:5px}
         .wordle-enhanced-key-row{gap:3px}
         .wordle-enhanced-key{width:clamp(25px,8.4vw,34px);height:50px}
@@ -152,10 +154,14 @@
         button.appendChild(label);
 
         const statuses = keys[letter] || [];
-        const columns = Math.max(1, Math.ceil(Math.sqrt(statuses.length || 1)));
+        // Automatically choose a compact grid for the number of Wordle boards:
+        // 1 -> 1x1, 2 -> 2x1, 3 -> 2x2, 4 -> 2x2, 5 -> 3x2.
+        const columns = statuses.length <= 1 ? 1 : statuses.length <= 4 ? 2 : 3;
+        const rowsCount = Math.max(1, Math.ceil(statuses.length / columns));
         const segments = document.createElement('span');
         segments.className = 'wordle-enhanced-key-segments';
         segments.style.setProperty('--segment-cols', columns);
+        segments.style.setProperty('--segment-rows', rowsCount);
         statuses.forEach(status => {
           const segment = document.createElement('span');
           segment.className = 'wordle-enhanced-segment' + (status === 'unused' ? '' : ' ' + status);
@@ -180,12 +186,12 @@
     const back = document.createElement('button');
     back.type = 'button';
     back.className = 'wordle-enhanced-key';
-    back.innerHTML = '<span class="wordle-enhanced-key-letter">⌫</span><span class="wordle-enhanced-key-segments" style="--segment-cols:1"><span class="wordle-enhanced-segment"></span></span>';
+    back.innerHTML = '<span class="wordle-enhanced-key-letter">⌫</span><span class="wordle-enhanced-key-segments" style="--segment-cols:1;--segment-rows:1"><span class="wordle-enhanced-segment"></span></span>';
     back.onclick = () => { input.value = input.value.slice(0, -1); input.focus(); };
     const enter = document.createElement('button');
     enter.type = 'button';
     enter.className = 'wordle-enhanced-key';
-    enter.innerHTML = '<span class="wordle-enhanced-key-letter">↵</span><span class="wordle-enhanced-key-segments" style="--segment-cols:1"><span class="wordle-enhanced-segment"></span></span>';
+    enter.innerHTML = '<span class="wordle-enhanced-key-letter">↵</span><span class="wordle-enhanced-key-segments" style="--segment-cols:1;--segment-rows:1"><span class="wordle-enhanced-segment"></span></span>';
     enter.onclick = () => { if (!input.disabled) input.form?.requestSubmit(); };
     bottom.append(back, enter);
     keyboard.appendChild(bottom);
