@@ -1,6 +1,6 @@
 (() => {
   const STYLE_ID = 'profile-avatar-fixes-style';
-  const state = { saving: false };
+  const state = { saving: false, rendering: false };
   const api = async (path, options = {}) => {
     const response = await fetch(path, {
       headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
@@ -31,70 +31,67 @@
     try {
       const response = await fetch('/profile-mascots/manifest.json', { cache: 'no-store' });
       return response.ok ? await response.json() : [];
-    } catch {
-      return [];
-    }
+    } catch { return []; }
   }
 
   async function getCurrentAvatar() {
-    try {
-      const me = await api('/api/me');
-      return me.user?.avatarId || null;
-    } catch {
-      return null;
-    }
+    try { return (await api('/api/me')).user?.avatarId || null; } catch { return null; }
+  }
+
+  function updateVisibleAvatar(avatarId) {
+    const src = `/profile-mascots/${avatarId}.png`;
+    document.querySelectorAll('.topbar .profile-avatar-img, .profile-current-avatar').forEach(img => { img.src = src; });
+    document.querySelectorAll('.avatar-option').forEach(button => button.classList.toggle('selected', button.dataset.avatarId === avatarId));
   }
 
   async function renderPicker() {
+    if (state.rendering) return;
     const active = document.querySelector('[data-view="profile"].active') || /profilo/i.test(document.querySelector('.topbar .eyebrow')?.textContent || '');
     if (!active) return;
     const root = document.querySelector('.main section');
-    if (!root || root.querySelector('.avatar-picker-panel')) return;
+    if (!root || document.querySelector('.avatar-picker-panel')) return;
 
-    const manifest = await loadManifest();
-    if (!manifest.length) return;
-    const current = await getCurrentAvatar();
-    if (!current) return;
+    state.rendering = true;
+    try {
+      const manifest = await loadManifest();
+      const current = await getCurrentAvatar();
+      if (!manifest.length || !current || document.querySelector('.avatar-picker-panel')) return;
 
-    const panel = document.createElement('div');
-    panel.className = 'panel avatar-picker-panel';
-    panel.innerHTML = `
-      <div class="identity">
-        <img class="profile-current-avatar" src="/profile-mascots/${current}.png" alt="Mascotte attuale">
-        <div>
-          <p class="eyebrow">avatar</p>
-          <h2 style="margin:0">Scegli la tua mascotte</h2>
-          <p class="muted">La mascotte resta salvata sul tuo profilo finché non decidi di cambiarla.</p>
+      const panel = document.createElement('div');
+      panel.className = 'panel avatar-picker-panel';
+      panel.innerHTML = `
+        <div class="identity">
+          <img class="profile-current-avatar" src="/profile-mascots/${current}.png" alt="Mascotte attuale">
+          <div><p class="eyebrow">avatar</p><h2 style="margin:0">Scegli la tua mascotte</h2><p class="muted">La mascotte resta salvata sul tuo profilo finché non decidi di cambiarla.</p></div>
         </div>
-      </div>
-      <div class="avatar-picker">
-        ${manifest.map(item => `<button type="button" class="avatar-option ${item.id === current ? 'selected' : ''}" data-avatar-id="${item.id}" aria-label="Scegli ${item.id}"><img src="/profile-mascots/${item.id}.png" alt=""></button>`).join('')}
-      </div>`;
+        <div class="avatar-picker">${manifest.map(item => `<button type="button" class="avatar-option ${item.id === current ? 'selected' : ''}" data-avatar-id="${item.id}" aria-label="Scegli ${item.id}"><img src="/profile-mascots/${item.id}.png" alt=""></button>`).join('')}</div>`;
+      root.appendChild(panel);
 
-    root.appendChild(panel);
-
-    panel.querySelectorAll('[data-avatar-id]').forEach(button => {
-      button.addEventListener('click', async () => {
+      panel.querySelectorAll('[data-avatar-id]').forEach(button => button.addEventListener('click', async () => {
         if (state.saving || button.dataset.avatarId === current) return;
         state.saving = true;
         panel.querySelectorAll('[data-avatar-id]').forEach(item => item.disabled = true);
+        const avatarId = button.dataset.avatarId;
         try {
-          await api('/api/profile', {
-            method: 'PATCH',
-            body: JSON.stringify({ avatarId: button.dataset.avatarId })
-          });
-          // Keep the SPA on Profilo: save, refresh the in-memory user, never reload the page.
+          const result = await api('/api/profile', { method: 'PATCH', body: JSON.stringify({ avatarId }) });
+          updateVisibleAvatar(result.user?.avatarId || avatarId);
+          // Do not reload or rerender the whole SPA: this prevents the duplicate picker and updates immediately.
           if (typeof window.loadData === 'function') {
-            await window.loadData();
+            try {
+              const previous = window.render;
+              window.render = () => {};
+              await window.loadData();
+              window.render = previous;
+            } catch { /* visual state is already updated */ }
           }
+          updateVisibleAvatar(avatarId);
+          panel.querySelectorAll('[data-avatar-id]').forEach(item => item.disabled = false);
         } catch (error) {
           panel.querySelectorAll('[data-avatar-id]').forEach(item => item.disabled = false);
           alert(error.message);
-        } finally {
-          state.saving = false;
-        }
-      });
-    });
+        } finally { state.saving = false; }
+      }));
+    } finally { state.rendering = false; }
   }
 
   injectStyle();
