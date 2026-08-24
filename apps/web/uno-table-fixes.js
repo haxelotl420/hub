@@ -1,7 +1,7 @@
 (() => {
   const STYLE_ID = 'uno-table-fixes-style';
   let match = null;
-  let busy = false;
+  let me = null;
 
   const api = async (path, options = {}) => {
     const response = await fetch(path, { headers: { 'Content-Type': 'application/json', ...(options.headers || {}) }, ...options });
@@ -36,6 +36,10 @@
     try { match = (await api(`/api/matches/${id}`)).match; } catch { match = null; }
   }
 
+  async function loadMe() {
+    try { me = (await api('/api/me')).user?.id || null; } catch { me = null; }
+  }
+
   function playerName(id) {
     const profile = match?.playerProfiles?.find(player => player.id === id);
     return profile?.displayName || profile?.username || id;
@@ -48,10 +52,8 @@
     let wrap = table.querySelector('.gf-opponents');
     if (!wrap) { wrap = document.createElement('div'); wrap.className = 'gf-opponents'; table.appendChild(wrap); }
 
-    const opponents = (match.state?.players || []).filter(player => player.id !== match.playerIds?.find(id => id === match.state?.viewerId));
-    const me = match.playerIds?.find(id => id === match.state?.viewerId);
     const actualOpponents = (match.state?.players || []).filter(player => player.id !== me);
-    if (!actualOpponents.length) return;
+    if (!actualOpponents.length) { wrap.innerHTML = ''; return; }
 
     const html = actualOpponents.map((player, index) => {
       const count = Math.max(0, Number(player.cardCount) || 0);
@@ -75,6 +77,7 @@
 
   async function tick() {
     injectStyle();
+    if (!me) await loadMe();
     await loadMatch();
     renderOpponentHands();
   }
