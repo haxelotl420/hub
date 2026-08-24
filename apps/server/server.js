@@ -26,7 +26,7 @@ source = source.replace(
 );
 source = source.replace(
   "function publicUser(user) {\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, status: user.status, createdAt: user.createdAt };\n}",
-  "function publicUser(user) {\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, avatarId: user.avatarId || null, status: user.status, createdAt: user.createdAt };\n}"
+  "function publicUser(user) {\n  if (user && !user.avatarId) {\n    user.avatarId = `mascot-${String(Math.floor(Math.random() * 100) + 1).padStart(3, '0')}`;\n    saveStore();\n  }\n  return { id: user.id, username: user.username, displayName: user.displayName, bio: user.bio, avatarId: user.avatarId || null, status: user.status, createdAt: user.createdAt };\n}"
 );
 source = source.replace(
   "function normalizeGameSettings(gameId, input = {}) {",
@@ -35,10 +35,6 @@ source = source.replace(
 source = source.replace(
   "const user = requireUser(req, res); if (!user) return;",
   "const user = requireUser(req, res); if (!user) return;\n\n  if (method === 'PATCH' && pathname === '/api/profile') {\n    const input = await body(req);\n    if (input.avatarId !== undefined) {\n      const avatarId = String(input.avatarId || '').trim();\n      if (!/^mascot-\\d{3}$/.test(avatarId)) return json(res, 422, { error: 'Avatar non valido.' });\n      user.avatarId = avatarId;\n    }\n    saveStore();\n    return json(res, 200, { user: publicUser(user) });\n  }"
-);
-source = source.replace(
-  "  if (method === 'POST' && pathname === '/api/lobbies') {",
-  "  if (method === 'POST' && pathname === '/api/lobbies') {"
 );
 source = source.replace(
   "      const user = { id: id('usr'), username, email, passwordHash: hashPassword(password), displayName: input.displayName || username, bio: '', status: 'online', createdAt: new Date().toISOString() };",
