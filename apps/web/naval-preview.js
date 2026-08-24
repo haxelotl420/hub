@@ -1,12 +1,20 @@
 (() => {
   // Independent Battleship setup helper. It fixes the legacy classic-fleet
   // cards (which do not carry an instance id in the rendered HTML) and draws
-  // a real SVG preview while the pointer is over the board.
+  // a visible placement footprint while the pointer is over the board.
   const LEGACY_FLEET = ['carrier', 'battleship', 'cruiser', 'submarine', 'destroyer'];
   let selected = null;
   let orientation = 'H';
   let mirror = false;
   let preview = null;
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .naval-svg-placement-preview{position:absolute;pointer-events:none;z-index:8;border:2px solid #b8ffe0;border-radius:9px;background:#56e0a033;box-shadow:0 0 0 3px #56e0a022,0 0 18px #56e0a055;overflow:visible}
+    .naval-svg-placement-preview.invalid{border-color:#ffd0d8;background:#ff5d7833;box-shadow:0 0 0 3px #ff5d7822,0 0 18px #ff5d7855}
+    .naval-svg-placement-preview svg{width:100%;height:100%;display:block;opacity:.72;filter:drop-shadow(0 2px 3px #0008);transform-origin:center;transform:rotate(var(--ship-preview-rotate)) scaleX(var(--ship-preview-mirror));}
+  `;
+  document.head.appendChild(style);
 
   function legacyId(typeId) {
     const index = LEGACY_FLEET.indexOf(typeId);
@@ -63,12 +71,12 @@
     const gap = parseFloat(computed.gap) || 2;
     const cellWidth = cellRect.width;
     const cellHeight = cellRect.height;
-    const gridRows = Number(board.style.getPropertyValue('--naval-size')) || board.querySelectorAll('[data-naval-row]').length;
+    const gridSize = Number(board.style.getPropertyValue('--naval-size')) || Math.sqrt(board.querySelectorAll('[data-naval-row]').length);
     const hoveredRow = Number(cell.dataset.navalRow);
     const hoveredCol = Number(cell.dataset.navalCol);
     const spanRows = orientation === 'V' ? cols : rows;
     const spanCols = orientation === 'V' ? rows : cols;
-    const valid = hoveredRow >= 0 && hoveredCol >= 0 && hoveredRow + spanRows <= gridRows && hoveredCol + spanCols <= gridRows;
+    const valid = hoveredRow >= 0 && hoveredCol >= 0 && hoveredRow + spanRows <= gridSize && hoveredCol + spanCols <= gridSize;
 
     const overlay = document.createElement('div');
     overlay.className = `naval-svg-placement-preview ${valid ? 'valid' : 'invalid'}`;
@@ -82,8 +90,8 @@
     board.appendChild(overlay);
     preview = overlay;
 
-    // Also tint the affected grid cells so the placement footprint is obvious
-    // even when the SVG itself is partially transparent.
+    // Tint the affected footprint too, so the preview remains obvious even
+    // when the SVG is small on a large board.
     for (let r = hoveredRow; r < hoveredRow + spanRows; r += 1) {
       for (let c = hoveredCol; c < hoveredCol + spanCols; c += 1) {
         const target = board.querySelector(`[data-naval-row="${r}"][data-naval-col="${c}"]`);
@@ -91,8 +99,6 @@
       }
     }
   }
-
-  function boardFromTarget(target) { return target?.closest('#own-naval-board'); }
 
   function bind() {
     installPlacementIds();
